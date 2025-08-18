@@ -1,0 +1,157 @@
+
+.clearposition{
+    position:initial  !important;
+}
+.dropdown-menu.show{
+ width: 100% !important;
+}
+.container{
+    position: relative;
+    background-color: --bg-dark;
+}
+.section_container{
+    padding-right: calc(var(--bs-gutter-x) * .5);
+    padding-left: calc(var(--bs-gutter-x) * .5);
+    padding-top: 3rem;
+    color:var(--text-primary);
+}
+.home_section_title{
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 30px 0px 30px 0px;
+    text-transform: capitalize;
+    font-weight: 400;
+    background:  linear-gradient(90deg,#00ffff,#ff00ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    position: relative;
+    margin:0 auto;
+}
+.home_section_title::after{
+    content:'';
+    position: absolute;
+    bottom: 0px;
+    left:0px;
+    width: 350px;
+    height:2px;
+    transform: translateX(-50%);
+    background:linear-gradient(90deg,var(--primary),var(--secondary));
+    box-shadow: 0 0 10px var(--primary);
+}
+
+.navbar-nav a{
+    text-transform: capitalize;
+    /* background-color: white; */
+    background:  linear-gradient(0deg,#00ffff,#ff00ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    position: relative;
+}
+
+.home_header{
+    padding: 20px 0 !important;
+    --bs-bg-opacity: 1;
+    background-color: var(--bg-dark) !important;
+    border-bottom: 1px solid rgba(0, 255, 255, 0.2);
+}
+
+.navbar-nav a::after{
+    content:'';
+    position: absolute;
+    bottom: -5px;
+    left:0;
+    width: 0;
+    height:2px;
+    background: linear-gradient(90deg,var(--primary),var(--secondary));
+    transition: width 0.3s ease;
+}
+.navbar-nav .nav-link:hover::after{
+    width: 100%;
+}
+.section-title {
+            font-family: 'Orbitron', sans-serif;
+            font-size: 3rem;
+            font-weight: 700;
+            color:white;
+            margin-bottom: 50px;
+            text-align: center;
+            position: relative;
+            display: inline-block;
+            width: 100%;
+            letter-spacing: 4px;
+            text-transform: uppercase;
+            text-shadow: 0 0 10px rgba(0, 255, 255, 0.8), 
+                         0 0 20px rgba(0, 255, 255, 0.6),
+                         0 0 30px rgba(0, 255, 255, 0.4);
+            animation: titleGlow 2s ease-in-out infinite alternate;
+        }
+
+        @keyframes titleGlow {
+            0% { opacity: 0.8; }
+            100% { opacity: 1; text-shadow: 0 0 15px rgba(0, 255, 255, 1), 
+                                           0 0 30px rgba(0, 255, 255, 0.8),
+                                           0 0 45px rgba(0, 255, 255, 0.6); }
+        }
+.section-title::after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 150px;
+            height: 4px;
+            background: linear-gradient(90deg, var(--primary), var(--secondary));
+            box-shadow: 0 0 10px var(--primary);
+        }
+.bi::before, [class*=" bi-"]::before, [class^=bi-]::before{
+    color:white;
+}
+footer ul{
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+    margin: 0 auto;
+    text-align: center;
+    margin: 0 auto;
+    justify-content: space-between;
+    
+}
+footer ul li{
+    text-transform: capitalize;
+    font-weight: 400 !important;
+    background:  linear-gradient(0deg,#00ffff,#ff00ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+.copyright{
+    text-transform: capitalize;
+    font-weight: 400 !important;
+    background:  linear-gradient(0deg,#00ffff,#ff00ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+.bi::before, [class*=" bi-"]::before, [class^=bi-]::before{
+    color:var(--primary);
+    cursor: pointer;
+}
+@media (max-width:768px) {
+    .login{
+        display: flex;
+    flex-direction: row-reverse !important;
+    justify-content: space-between;
+        
+    }
+    
+}

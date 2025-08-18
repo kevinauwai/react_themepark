@@ -1,0 +1,92 @@
+export const navlist=[
+    {
+        id:1,
+        text:"home",
+        link:"/",
+    },
+    {
+        id:2,
+        text:"facilitiese",
+        link:"/facilities",
+    },
+    {
+        id:3,
+        text:"Hotel",
+        link:"/Hotel",
+    },
+    {
+        id:4,
+        text:"contact us",
+        link:"/contactus",
+    },
+    {
+        id:5,
+        text:"shop",
+        link:"/onlineshop",
+    },
+    {
+        id:6,
+        text:"FAQ",
+        link:"/faq",
+    },
+];
+export const secitonitems=[
+    {
+        id:1,
+        img:'./img/home/attraction_1.png',
+        title:'product1',
+        info:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, odit!",
+        price:1399
+    },
+     {
+        id:2,
+        img:'./img/home/attraction_2.png',
+        title:'product2',
+        info:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, odit!",
+        price:2399
+    },
+     {
+        id:3,
+        img:'./img/home/attraction_3.png',
+        title:'product3',
+        info:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, odit!",
+        price:3399
+    },
+     {
+        id:4,
+        img:'./img/home/attraction_4.png',
+        title:'product4',
+        info:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, odit!",
+        price:3399
+    },
+];
+ export const productlist=[
+    {
+        id:1,
+        img:"./img/onlineshop/product1.jpg",
+        title:'product1',
+        price:100,
+        size:"large"
+    },
+    {
+        id:2,
+        img:"./img/onlineshop/product2.jpg",
+        title:'product2',
+        price:200,
+        size:"small"
+    },
+    {
+        id:3,
+        img:"./img/onlineshop/product3.jpg",
+        title:'product3',
+        price:400,
+        size:"Medium"
+    },
+    {
+        id:4,
+        img:"./img/onlineshop/product4.jpg",
+        title:'product4',
+        price:500,
+        size:"Medium"
+    },
+];

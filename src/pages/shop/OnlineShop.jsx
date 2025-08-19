@@ -11,7 +11,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
-import {secitonitems,productlist} from '../../data';
+import {secitonitems,productlist,productbanners} from '../../data';
 import '../../css/onlineshop.css';
 // import required modules
 import { Autoplay, Pagination, Navigation } from 'swiper/modules';
@@ -40,7 +40,7 @@ const OnlineShop = () => {
         modules={[Autoplay, Pagination, Navigation]}
         className="mySwiper"
       >
-        {secitonitems.map((item)=>
+        {productbanners.map((item)=>
         <SwiperSlide>
           <img src={item.img}/>
         </SwiperSlide>
@@ -60,7 +60,7 @@ const OnlineShop = () => {
       </InputGroup>
         <Row>
           {productlist.filter((item)=>item.title.toLowerCase().includes(filtervalue.toLowerCase())).map((product)=>
-          <Col key={product.id} xs={12} lg={3}>
+          <Col key={product.id} xs={12} md={6} lg={3}>
             <Product {...product} />
           </Col>
           )}

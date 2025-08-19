@@ -10,6 +10,7 @@ import { BrowserRouter,Link,Routes,Route } from 'react-router-dom'
 import Cart from './pages/shop/Cart';
 import Product from './pages/shop/Product';
 import ProductDetail from './pages/shop/ProductDetail';
+import News from './pages/news/News';
 function App() {
   return (
     <>
@@ -21,7 +22,7 @@ function App() {
       <Route path='/cart' element={<Cart/>}></Route>
       <Route path="/product" element={<Product />} />
       <Route path="/productDetail" element={<ProductDetail />} />
-      <Route path="/product/:productId" element={<ProductDetail />} />
+      <Route path="/news" element={<News />} />
     </Routes>
     {/* <Home/> */}
     {/* <OnlineShop /> */}

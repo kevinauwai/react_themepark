@@ -1,10 +1,12 @@
 import{createSlice } from '@reduxjs/toolkit';
 const initialState={itemList:[],totalQuantity:0,showCart:false};
+
 const cartSlice=createSlice({
     name:"cart",
     initialState,
     reducers:{
         addToCart(state,action){
+            console.log(action.payload);
             const newItem=action.payload;
             const exitingItem=state.itemList.find((item)=>item.id===newItem.id);
             if(exitingItem){
@@ -24,7 +26,9 @@ const cartSlice=createSlice({
         },
         removeFromCart(state,action){
             const findItem=state.itemList.find((item)=>item.id===action.payload.id);
-            if(findItem.quantity===1){
+            if(findItem == undefined){
+                return;
+            }else if(findItem.quantity===1){
                 state.itemList=state.itemList.filter((item)=>item.id!=action.payload.id);
 
             }else{

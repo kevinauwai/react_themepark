@@ -112,6 +112,9 @@
 .bi::before, [class*=" bi-"]::before, [class^=bi-]::before{
     color:white;
 }
+footer{
+    border-top:1px solid rgba(0, 255, 255, 0.2);
+}
 footer ul{
     display: flex;
     list-style: none;
@@ -146,12 +149,36 @@ footer ul li{
     color:var(--primary);
     cursor: pointer;
 }
+
+.position-relative-cart{
+        display: block;
+        position: absolute;
+        top:0;
+        right:100px;
+    }
+
+
 @media (max-width:768px) {
-    .login{
+    a.navbar-brand{
+        margin:0 auto;
+    }
+    .home_header .container{
+        flex-direction: row-reverse;
+    }
+    .position-relative{
+    display: none;
+    }
+    .position-relative-cart{
+        position: absolute;
+        top:0;
+        display: block;
+        right:15px;
+    }
+    /* .login{
         display: flex;
     flex-direction: row-reverse !important;
     justify-content: space-between;
         
-    }
+    } */
     
 }

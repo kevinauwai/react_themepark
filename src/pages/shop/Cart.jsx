@@ -93,15 +93,12 @@ import React, { useState } from 'react'
                         type="checkbox"
                         id="check1"
                         inline
-                        label="I acknowledge that I have read and understood and I agree to the use of my personal data for direct marketing purposes in the manner set out in the Ocean Park's Personal Information Collection Statement & Privacy Policy Statement"
+                        label="I acknowledge that I have read and understood and I agree to the use of my personal data for direct marketing purposes in the manner set out in the Theme Park's Personal Information Collection Statement & Privacy Policy Statement"
                       />
                   </div>
                 </Form>
-                <button
-                  onClick={() => dispatch(clearCart())}
-                  className="neural-btn mt-4 bg-red-500  px-4 py-2 rounded hover:bg-red-600"
-                >
-                  Clear Cart
+                <button className="neural-btn mt-4 bg-red-500  px-4 py-2 rounded hover:bg-red-600">
+                 Check Out
                 </button>
               </div>
                 </div>
@@ -111,9 +108,18 @@ import React, { useState } from 'react'
               
             </>
           )}
-          <button className="neural-btn mt-4 bg-red-500  px-4 py-2 rounded hover:bg-red-600">
+          <div className="cart_footer">
+             <button onClick={()=>history.back()} className="neural-btn mt-4 bg-red-500  px-4 py-2 rounded hover:bg-red-600">
                  Back
                 </button>
+                <button
+                  onClick={() => dispatch(clearCart())}
+                  className="neural-btn mt-4 bg-red-500  px-4 py-2 rounded hover:bg-red-600"
+                >
+                  Clear Cart
+                </button>
+          </div>
+         
         </div>
         </div>
         

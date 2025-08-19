@@ -20,8 +20,8 @@ function Navmenu() {
   return (
     <Navbar expand="lg" expanded={expanded} onToggle={handleToggle} className="home_header" sticky='top' >
       <Container>
-        <Navbar.Brand href="#">
-          <img src='../vite.svg'/>
+        <Navbar.Brand href="#" >
+          <img src='../img/home/logo_removebg.png' width={100} />
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
@@ -44,7 +44,7 @@ function Navmenu() {
             </NavDropdown> */}
           </Nav>
           <Nav className="ml-auto login"> {/* 'ml-auto' for right-aligned items */}
-           <div className="position-relative">
+           {/* <div className="position-relative">
   
     <i className="bi bi-cart fs-3"  onClick={()=>navigate('/cart')}></i> 
 
@@ -53,11 +53,18 @@ function Navmenu() {
     {count}
      <span className="visually-hidden">items in cart</span>
   </span>
-</div>
+</div> */}
            
-          <Link className='neural-btn  bg-red-500  text-center  py-2 rounded hover:bg-red-600 text-decoration-none'>Login</Link>
+          <Link className="nav-link">Login</Link>
         </Nav>
         </Navbar.Collapse>
+        <div className="position-relative-cart">
+              <i className="bi bi-cart fs-3"  onClick={()=>navigate('/cart')}></i> 
+            <span className="badge rounded-pill bg-danger position-absolute top-0 start-100 translate-middle">
+              {count}
+              <span className="visually-hidden">items in cart</span>
+            </span>
+          </div>
       </Container>
     </Navbar>
     

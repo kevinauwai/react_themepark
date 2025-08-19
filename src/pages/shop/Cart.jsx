@@ -41,7 +41,7 @@ import React, { useState } from 'react'
                    {cart.filter((item)=>item.title.toLowerCase().includes(myfiltervalue.toLowerCase())).map((item,index)=>(
                     <div key={item.id} className="onlineshop_cart_item">
                     <img src={item.img} alt="" width={200}/>
-                    <div className="onlineshop_cart_item_info p-4">
+                    <div className="onlineshop_cart_item_info">
                         <h3  style={{color:index%2==0?'var(--primary)':'var(--secondary)'}}>
                         {item.title}
                       </h3>

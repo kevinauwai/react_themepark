@@ -260,6 +260,12 @@
   .onlineshop_cart_productlist{
     width: 100%;
   }
+  .onlineshop_cart_item{
+    flex-direction: column;
+    img{
+      width: 100%;
+    }
+  }
   .onlineshop_cart_info{
     width: 100%;
   }

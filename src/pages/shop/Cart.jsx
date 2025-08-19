@@ -24,7 +24,7 @@ import React, { useState } from 'react'
           <div className="cart  p-6">
           
           <h2 className="cart_title text-2xl font-bold mb-4">Shopping Cart</h2>
-          <InputGroup className="mb-3 w-50 ">
+          <InputGroup className="mb-3  ">
                         <Form.Control
                           aria-label="Example text with button addon"
                           aria-describedby="basic-addon1"

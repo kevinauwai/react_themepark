@@ -4,7 +4,7 @@ import { Col, Container, Row } from 'react-bootstrap';
 const Footer = () => <footer className="bg-dark text-white text-center py-3 ">
         <Container>
           <ul className="pt-3">
-            <li>Privacy Policy</li>
+            <li><a href="#">Privacy Policy</a></li>
             <li>Legal Terms</li>
             <li>Terms of use</li>
             <li>Park Rules</li>

@@ -1,7 +1,6 @@
 html,body{
     margin:0;
     padding:0;
-    font-family: sans-serif;
     font-size: 16px;
 }
 :root{
@@ -15,7 +14,7 @@ html,body{
 
 }
 body{
-    font-family: "Noto Serif", serif;
+  font-family: 'Exo 2', -apple-system, BlinkMacSystemFont, sans-serif !important;
   font-optical-sizing: auto;
   font-weight: 700;
   font-style: normal;

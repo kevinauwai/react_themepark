@@ -11,8 +11,6 @@ import {useDispatch,useSelector} from 'react-redux';
 import {clearCart,addToCart,removeFromCart} from '../../store/cartSlice';
 // Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react';
-
-
 // Import Swiper styles
 import 'swiper/css';
 import 'swiper/css/free-mode';
@@ -132,7 +130,7 @@ const ProductDetail = () => {
                           +
                         </Button>
                         <Form.Control
-                          aria-label="Example text with button addon"
+                          aria-label="input number"
                           aria-describedby="basic-addon1"
                           value={qty} 
                         />

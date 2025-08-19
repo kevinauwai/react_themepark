@@ -48,11 +48,12 @@ const OnlineShop = () => {
         
       </Swiper>
    </div>
-   <div className='onlineshop_productlist'>
+   <div className='onlineshop_productlist container'>
     <h2 className='section-title'>Product List</h2>
     <InputGroup className="mb-3 w-25 ">
                         <Form.Control
-                          aria-label="Example text with button addon"
+                        className='search'
+                          aria-label="search"
                           aria-describedby="basic-addon1"
                           placeholder="please input product name to search"
                           onChange={(e) => handleChange(e.target.value)}

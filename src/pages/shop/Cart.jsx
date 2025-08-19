@@ -47,12 +47,13 @@ import React, { useState } from 'react'
                       </h3>
                   
                         ${item.price.toFixed(2)} x {item.quantity} 
-                        <InputGroup className="onlineshop_cart_item_center mb-3">
+                        <InputGroup className="onlineshop_cart_item_center mb-3 w-100">
                         <Button variant="outline-secondary" onClick={()=>increase(item)}  id="button-addon1">
                           +
                         </Button>
                         <Form.Control
-                          aria-label="Example text with button addon"
+                        className="search"
+                          aria-label="search"
                           aria-describedby="basic-addon1"
                           value={item.quantity} 
                         />

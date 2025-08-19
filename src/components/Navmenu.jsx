@@ -59,11 +59,13 @@ function Navmenu() {
         </Nav>
         </Navbar.Collapse>
         <div className="position-relative-cart">
+          
               <i className="bi bi-cart fs-3"  onClick={()=>navigate('/cart')}></i> 
             <span className="badge rounded-pill bg-danger position-absolute top-0 start-100 translate-middle">
               {count}
               <span className="visually-hidden">items in cart</span>
             </span>
+            
           </div>
       </Container>
     </Navbar>

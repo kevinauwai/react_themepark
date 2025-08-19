@@ -253,7 +253,7 @@
             60% { transform: rotate(-4deg) scale(1.05); }
             80% { transform: rotate(4deg) scale(1.05); }
         }
-@media screen and (min-width:568px) and (max-width:997px) {
+@media  (max-width:997px) {
   .onlineshop_cart_container{
     flex-direction: column;
   }

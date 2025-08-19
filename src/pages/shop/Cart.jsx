@@ -47,7 +47,7 @@ import React, { useState } from 'react'
                       </h3>
                   
                         ${item.price.toFixed(2)} x {item.quantity} 
-                        <InputGroup className="onlineshop_cart_item_center mb-3 w-50">
+                        <InputGroup className="onlineshop_cart_item_center mb-3">
                         <Button variant="outline-secondary" onClick={()=>increase(item)}  id="button-addon1">
                           +
                         </Button>

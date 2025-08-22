@@ -28,20 +28,30 @@ const cartSlice=createSlice({
             const findItem=state.itemList.find((item)=>item.id===action.payload.id);
             if(findItem == undefined){
                 return;
-            }else if(findItem.quantity===1){
-                state.itemList=state.itemList.filter((item)=>item.id!=action.payload.id);
+            }
+            // else if(findItem.quantity===1){
+            //     state.itemList=state.itemList.filter((item)=>item.id!=action.payload.id);
 
-            }else{
+            // }
+            else{
                 findItem.quantity--;
                 findItem.totalPrice-=findItem.price;
                 state.totalQuantity--;
             }
         },
+        removeProduct(state,action){
+             const findItem=state.itemList.find((item)=>item.id===action.payload.id);
+             if(findItem!=undefined){
+                state.totalQuantity=state.totalQuantity-findItem.quantity;
+                state.itemList=state.itemList.filter((item)=>item.id!=action.payload.id);
+             }
+        },
         clearCart(state){
             state.totalQuantity=0;
             state.itemList.length=0;
-        }
+        }, 
+       
     }
 });
-export const {clearCart,addToCart,removeFromCart}=cartSlice.actions;
+export const {clearCart,addToCart,removeFromCart,removeProduct,flyitemtocart}=cartSlice.actions;
 export default cartSlice.reducer;

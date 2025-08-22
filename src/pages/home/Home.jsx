@@ -6,15 +6,16 @@ import { Container } from 'react-bootstrap';
 const Home = () => {
   return (
     <>
-    <iframe width="100%" height="600px" src="https://www.youtube.com/embed/u84hRUQlaio?si=KpyMLO4U58ipQmhA&autoplay=1&mute=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" autoplay allowfullscreen></iframe>
-    <main>
-      <Section title="facilities"/>
+   <iframe width="100%" height="600" src="https://www.youtube.com/embed/Gnx4XUvEd44?si=G-L1erEWVtzgRp72&amp;start=10" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
+   <Container className='home_container'>
+      {/* <Section title="facilities"/> */}
       <Section title="news"/>
-      <Section title="hotel"/>
+      <Section title="products"/>
+      {/* <Section title="hotel"/>
       <Section title="Ticket"/>
-      <Section title="restaurant"/>
+      <Section title="restaurant"/> */}
       {/* <SwiperSection/> */}
-    </main>
+    </Container>
     </>
   )
 }

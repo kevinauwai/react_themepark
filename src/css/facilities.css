@@ -1,0 +1,161 @@
+/* facilities */
+:root {
+   --primary: #00ffff;
+   --secondary: #ff00ff;
+   --accent: #ffff00;
+   --bg-dark: #0a0a0a;
+   --bg-glass: rgba(255, 255, 255, 0.05);
+   --text-primary: #ffffff;
+   --text-secondary: #b0b0b0;
+}
+
+
+body {
+   font-family: 'Exo 2', -apple-system, BlinkMacSystemFont, sans-serif;
+   background-color: var(--bg-dark);
+   color: var(--text-primary);
+   overflow-x: hidden;
+   position: relative;
+   line-height: 1.6;
+   -webkit-font-smoothing: antialiased;
+   -moz-osx-font-smoothing: grayscale;
+}
+        
+.facilities {
+  ul{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap:2rem;
+  }
+  .facilities-description{
+    display:-webkit-box;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 6;
+    -webkit-box-orient: vertical;
+  }
+  h1{
+    font-family: 'Orbitron', sans-serif;
+    font-size: 3rem;
+    font-weight: 700;
+    text-align: center;
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    text-shadow: 0 0 10px rgba(0, 255, 255, 0.8), 0 0 20px rgba(0, 255, 255, 0.6), 0 0 30px rgba(0, 255, 255, 0.4);
+    animation: titleGlow 2s ease-in-out infinite alternate;
+  }
+  p{font-family: 'Exo 2', -apple-system, BlinkMacSystemFont, sans-serif;
+    margin-bottom: 30px;
+    padding: 10px; font-size: 1.2rem; color: var(--text-primary);}
+
+  h2{
+    font-family: 'Orbitron', sans-serif;
+    font-size: 2.2rem;
+    font-weight: 700;
+    text-align: center;
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    text-shadow: 0 0 10px rgba(0, 255, 255, 0.8), 0 0 20px rgba(0, 255, 255, 0.6), 0 0 30px rgba(0, 255, 255, 0.4);
+    animation: titleGlow 2s ease-in-out infinite alternate;
+  }
+  h3{  
+  color: var(--secondary);
+  font-family: 'Orbitron', sans-serif;
+  font-size: 2rem;
+  font-weight: 700;
+  text-align: center;
+  padding: 20px;
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  letter-spacing: 4px;
+  text-transform: uppercase;}
+
+  ul {
+    text-align: center;
+    align-items: center;
+  }
+  img {
+    width: 100%;
+    height: auto;
+    max-width: 1000px;
+    margin: 0 auto;
+    border-radius: 10px;
+  }
+}
+.facilities-cards {
+      align-items: center;
+}
+
+
+.facilities-tickets-button{
+    padding: 12px;
+    margin-top: 50px;
+    margin-bottom: 100px;
+    font-family: 'Audiowide', sans-serif;
+    background: linear-gradient(90deg, var(--primary), var(--secondary));
+    color: var(--bg-dark);
+    padding: 15px 40px;
+    border: none;
+    border-radius: 50px;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.facilities-tickets-button:hover { filter:brightness(200%);}
+
+/* responsive design */
+/* @media (max-width: 799px)and (min-width: 577px) {
+.facilities {
+  p{padding: 20px; font-size: 1rem; color: var(--text-primary);}
+}
+.facilities-cards {
+    grid-template-columns: 1fr 1fr;
+}
+} */
+
+@media (max-width: 768px) {
+.facilities {
+  p{padding: 20px; font-size: 1rem; color: var(--text-primary);}
+  ul{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+}
+.facilities-cards {
+    grid-template-columns: 1fr;
+}
+}
+
+
+/* 
+.facilities-card {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: start;
+  gap: 20px;
+  padding: 20px;
+} */
+
+/* .facilities-img {
+  width: 50%;
+  align-items: center;
+}
+
+.facilities-mapimage {
+  align-items: center
+  width: 50%;} */

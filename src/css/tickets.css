@@ -1,0 +1,164 @@
+/* tickets */
+:root {
+   --primary: #00ffff;
+   --secondary: #ff00ff;
+   --accent: #ffff00;
+   --bg-dark: #0a0a0a;
+   --bg-glass: rgba(255, 255, 255, 0.05);
+   --text-primary: #ffffff;
+   --text-secondary: #b0b0b0;
+}
+
+
+body {
+   font-family: 'Exo 2', -apple-system, BlinkMacSystemFont, sans-serif;
+   background-color: var(--bg-dark);
+   color: var(--text-primary);
+   overflow-x: hidden;
+   position: relative;
+   line-height: 1.6;
+   -webkit-font-smoothing: antialiased;
+   -moz-osx-font-smoothing: grayscale;
+   text-align: center;
+}
+.tickets {
+    .shoppingcart{
+        display: flex;
+        gap:2rem;
+        .stat-card{
+            width: 50%;
+        }
+        .react-datepicker{
+            background-color: var(--bg-dark);
+        }
+        .react-datepicker__month-container{
+            color:white;
+            background-color:var(--bg-dark);
+            .react-datepicker__header {
+                background-color: var(--bg-dark);
+            }
+            .react-datepicker__day-name, .react-datepicker__day, .react-datepicker__time-name{
+                color:white;
+            }
+            .react-datepicker__day:not([aria-disabled=true]):hover, .react-datepicker__month-text:not([aria-disabled=true]):hover, .react-datepicker__quarter-text:not([aria-disabled=true]):hover, .react-datepicker__year-text:not([aria-disabled=true]):hover{
+                color:var(--bg-dark);
+            }
+        }
+        .tickets_counter{
+            display: inline-block;
+            width: 5rem;
+        }
+    }
+    main{
+        width: 100%;
+    }
+    h1{
+    font-family: 'Orbitron', sans-serif;
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 50px;
+    text-align: center;
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    text-shadow: 0 0 10px rgba(0, 255, 255, 0.8), 0 0 20px rgba(0, 255, 255, 0.6), 0 0 30px rgba(0, 255, 255, 0.4);
+    animation: titleGlow 2s ease-in-out infinite alternate;
+  }
+    img {
+        width: 100%;
+        height: auto;
+        max-width: 600px;
+        margin: 0 auto;
+        border-radius: 10px;
+    }
+    h2 {font-family: 'Orbitron', sans-serif;
+        font-size: 1.5rem;
+        color: var(--secondary);
+        margin-top: 1rem;
+    }
+    h3 {font-family: 'Orbitron', sans-serif;
+        font-size: 1.2rem;
+        color: var(--accent);
+        margin-top: 0.5rem;
+    }
+    p {font-family: 'Exo 2', -apple-system, BlinkMacSystemFont, sans-serif;
+        font-size: 1rem;
+        margin-top: 0.5rem;
+    }
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   padding: 20px;
+   background-color: var(--bg-dark);
+   
+}
+
+.ticket-summary {
+        /* background: var(--bg-glass); */
+        color: var(--text-primary);
+        font-size: 1.5rem;
+        padding: 20px;
+        border-radius: 20px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        margin-bottom: 20px;
+    }
+.ticket-total{
+            color: var(--accent);
+            font-size: 2rem;
+            font-weight: bold;
+
+        }
+
+/* .ticket-checkout-button {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    color: var(--bg-dark);
+    background-color: var(--accent);
+    font-size: 1.2rem;} */
+
+.ticket-checkout-button {
+    margin-bottom: 100px;
+    font-family: 'Audiowide', sans-serif;
+    background: linear-gradient(90deg, var(--primary), var(--secondary));
+    color: var(--bg-dark);
+    padding: 15px 40px;
+    border: none;
+    border-radius: 50px;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.ticket-checkout-button::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 0;
+    height: 0;
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    transition: all 0.5s ease;
+}
+
+.ticket-checkout-button:hover { filter:brightness(200%);}
+
+
+@media (max-width:768px) {
+    .shoppingcart{
+        flex-direction: column;
+        .stat-card{
+            width: 100% !important;
+        }
+    }
+}

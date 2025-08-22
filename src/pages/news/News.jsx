@@ -4,25 +4,27 @@ import Card from 'react-bootstrap/Card';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Button from 'react-bootstrap/Button';
-import {productlist} from '../../data';
+import { BrowserRouter,Link,Routes,Route, Navigate } from 'react-router-dom';
+import {news} from '../../data';
 import '../../css/news.css';
 const News = () => {
-  console.log(productlist);
+  console.log(news);
   return (
     <Container className='news_container'>
-      <h1>Park Latest News</h1>
+      <h1 className='card-title'>Park Latest News</h1>
       <p>Stay updated with the newest attractions, special events and exclusive offers to make every visit memorable</p>
       <Row >
-        {productlist.map((product)=>
-          <Col xs={12} md={6} className='p-2'>
+        {news.map((newitem)=>
+          <Col key={newitem.id} xs={12} md={6} lg={4} className='p-2'>
         <Card>
-          <Card.Img variant="top" src={product.img} />
+          <Card.Img variant="top" src={newitem.img} />
           <Card.Body>
-            <Card.Title>{product.title}</Card.Title>
+            <Card.Title className='card-title-ellipsis'>{newitem.title}</Card.Title>
             <Card.Text>
-              {product.description}
+              {newitem.description}
             </Card.Text>
-            <Button variant="primary">Go somewhere</Button>
+            <Link to='/newsdetail' state={{...newitem}} className='add-btn p-4 neural-btn mt-4 bg-red-500  text-center  py-2 rounded hover:bg-red-600 text-decoration-none  w-100'>Detail</Link>
+            {/* <Button variant="primary" onClick={()}>Detail</Button> */}
           </Card.Body>
         </Card>
         </Col>

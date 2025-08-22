@@ -1,0 +1,460 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary: #00ffff;
+  --secondary: #ff00ff;
+  --accent: #ffff00;
+  --bg-dark: #0a0a0a;
+  --bg-glass: rgba(255, 255, 255, 0.05);
+  --text-primary: #ffffff;
+  --text-secondary: #b0b0b0;
+}
+
+body {
+  font-family: 'Exo 2', -apple-system, BlinkMacSystemFont, sans-serif;
+  background-color: var(--bg-dark);
+  color: var(--text-primary);
+  overflow-x: hidden;
+  position: relative;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1 {
+    font-size: 2.5rem;
+    text-align: center;
+}
+
+h2 {
+    text-transform: capitalize;
+    font-size: 2rem;
+    text-align: center;
+}
+
+h3 {
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+p {
+    font-size: 16px;
+    text-align: center;
+}
+
+li {
+    font-size: 1rem;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.section-title {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 50px;
+  text-align: center;
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  text-shadow: 0 0 10px rgba(0, 255, 255, 0.8), 
+               0 0 20px rgba(0, 255, 255, 0.6),
+               0 0 30px rgba(0, 255, 255, 0.4);
+  animation: titleGlow 2s ease-in-out infinite alternate;
+}
+
+@keyframes titleGlow {
+    0% { opacity: 0.8; }
+    100% { opacity: 1; text-shadow: 0 0 15px rgba(0, 255, 255, 1), 
+                                    0 0 30px rgba(0, 255, 255, 0.8),
+                                    0 0 45px rgba(0, 255, 255, 0.6); }
+}
+
+.section-title::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 150px;
+    height: 4px;
+    background: linear-gradient(90deg, var(--primary), var(--secondary));
+    box-shadow: 0 0 10px var(--primary);
+}
+
+.restaurants,
+.foodkiosks,
+.specialfoods,
+.special-food-request,
+.subscription,
+.subscribe-form,
+.login {            
+  padding: 100px 50px;
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.restaurant-cards,
+.foodkiosk-cards {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    align-items: start;
+    justify-content: center;
+}
+
+.restaurant-card,
+.foodkiosk-card,
+.subscription-card,
+.restaurant-contact-card,
+.specialfoods-contact-card,
+.subscribe-contact-card,
+.login-card {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    padding: 30px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    transition: all 0.3s ease;
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    cursor: pointer;
+  p {
+    font-size: 20px;
+    padding: 15px 15px;
+  }
+}
+
+.restaurant-card:hover,
+.foodkiosk-card:hover,
+.subscription-card:hover,
+.restaurant-contact-card:hover,
+.specialfoods-contact-card:hover,
+.subscribe-contact-card:hover,
+.login-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 40px rgba(0, 255, 255, 0.2);
+  border-color: var(--primary);
+}
+
+.restaurant-card::after,
+.foodkiosk-card::after,
+.subscription-card::after,
+.restaurant-contact-card::after,
+.specialfoods-contact-card::after,
+.subscribe-contact-card::after,
+.login-card:hover::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: 
+     linear-gradient(rgba(0, 255, 255, 0.1) 1px, transparent 1px),
+     linear-gradient(90deg, rgba(0, 255, 255, 0.1) 1px, transparent 1px);
+  background-size: 20px 20px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  pointer-events: none;
+}
+
+.restaurant-card:hover::after,
+.foodkiosk:hover::after,
+.subscription-card:hover::after,
+.restaurant-contact-card:hover::after,
+.specialfoods-contact-card:hover::after,
+.subscribe-contact-card:hover::after
+.login-card:hover::after {
+  opacity: 1;
+}
+
+.restaurant-card-container,
+.foodkiosk-card-container {
+    padding: 15px 16px;
+    padding-bottom: 30px;
+}
+
+.restaurant-card-img,
+.foodkiosk-card-img {
+    position: relative;
+    width: 100%;
+    z-index: 1;
+    p {
+        font-size: 1.8rem;
+        position: absolute;
+        background: #000000 ;
+        color: white;
+        right: 0;
+        bottom: 0;
+        margin: 0;
+    }
+}
+
+.restaurant-card h2,
+.foodkiosk-card h2 {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+  background: linear-gradient(90deg, var(--primary), var(--secondary));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-align: center;
+}
+
+.restaurant-image, 
+.foodkiosk-image {
+  width: 100%;
+  border-radius: 20px;
+}
+
+.restaurant-itemimage, 
+.foodkiosk-itemimage {
+  width: 100%;
+  border-radius: 20px;
+}
+
+.restaurant-row, 
+.foodkiosk-row {
+  margin-top: 25px;
+}
+
+.restaurant-column,
+.foodkiosk-column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+
+.specialfoods-container {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 50px;
+  align-items: center;
+  padding: 20px;
+}
+
+.specialfoods-img-wrapper {
+  position: relative;
+  border-radius: 20px;
+  overflow: hidden;
+  background: linear-gradient(45deg, var(--primary), var(--secondary));
+  padding: 10px;
+}
+
+.specialfoods-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 17px;
+  background: var(--bg-dark);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--primary);
+}
+
+.specialfoods-content {
+  h3 {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+  background: linear-gradient(90deg, var(--primary), var(--secondary));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-align: center;
+  }
+  p {
+  font-size: 1.1rem; 
+  line-height: 1.8; 
+  margin-bottom: 20px;
+  text-align: center;
+  }
+}
+
+.button {
+  font-family: 'Exo 2', sans-serif;
+  background: linear-gradient(90deg, var(--primary), var(--secondary));
+  color: var(--bg-dark);
+  padding: 15px 40px;
+  border: none;
+  border-radius: 50px;
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+  z-index: 2;
+}
+
+.button::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 0;
+  height: 0;
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  transition: all 0.5s ease;
+}
+
+.contact-form {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.form-group {
+  margin-bottom: 30px;
+  p {
+    text-align: left;}
+}
+
+.form-group input,
+.form-group option,
+.form-group time,
+.form-group text,
+.form-group textarea,
+.form-group select {
+  font-family: 'Courier New', Courier, monospace;
+  width: 100%;
+  padding: 15px;
+  background: var(--bg-glass);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  color: #b0b0b0;
+  font-size: 16px;
+  transition: all 0.3s ease;
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: #b0b0b0;
+  opacity: 1; /* Firefox */
+}
+
+.form-group input:focus,
+.form-group option:focus,
+.form-group time:focus,
+.form-group text:focus
+.form-group textarea:focus,
+.form-group select:focus {
+  outline: none;
+  border-color: var(--primary);
+  box-shadow: 0 0 20px rgba(0, 255, 255, 0.3);
+}
+
+.subscription-cards {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 3rem;
+    align-items: start;
+    justify-content: center;
+}
+
+.subscription-card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 350px;
+  margin: auto;
+  text-align: center;
+  h1 {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+  background: linear-gradient(90deg, var(--primary), var(--secondary));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-align: center;
+  }
+  li {
+    font-size: 16px;
+    text-align: center;
+    padding: 20px;
+  }
+}
+
+.subscription-card-img {
+  width: 100%;
+}
+
+.subscription-price {
+  color: grey;
+  font-size: 22px;
+}
+
+.subscription-card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.subscribe-contact-icon-container i {
+  font-size: 30px;
+}
+
+.login-card-image {
+  width: 25%;
+}
+
+.form-control {
+  font-size: 18px;
+  line-height: 1.1;
+  float: center;
+}
+
+/* Clearfix (clear floats) */
+.restaurant-row::after, .foodkiosk-row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+
+@media screen and (max-width: 992px) {
+  .specialfoods-container-img {
+    max-width: 100%;
+    margin: auto;
+    padding: 5px;
+  }
+  .specialfoods-content p {
+    text-align: center;
+  }
+  .restaurant-cards,
+  .foodkiosk-cards,
+  .specialfoods-container {
+    grid-template-columns: 1fr;
+  }
+  .subscription-cards {
+    max-width: auto;
+    grid-template-columns: 1fr;
+  }
+}
+

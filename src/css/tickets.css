@@ -9,7 +9,7 @@
    --text-secondary: #b0b0b0;
 }
 
-
+/* 
 body {
    font-family: 'Exo 2', -apple-system, BlinkMacSystemFont, sans-serif;
    background-color: var(--bg-dark);
@@ -19,8 +19,7 @@ body {
    line-height: 1.6;
    -webkit-font-smoothing: antialiased;
    -moz-osx-font-smoothing: grayscale;
-   text-align: center;
-}
+} */
 .tickets {
     .shoppingcart{
         display: flex;

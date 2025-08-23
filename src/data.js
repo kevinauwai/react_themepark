@@ -194,6 +194,45 @@ export const secitonitems=[
         size:"Medium"
     },
 ];
+ export const productlist=[
+    {
+        id:1,
+        img:"./img/onlineshop/products/product01.webp",
+        title:'Neon Gear Harness',
+        description:"Step into the future with the Neon Gear Harness, a sleek exosuit accessory inspired by Hong Kong's high-tech streets. Crafted with glowing LED strips and lightweight carbon fiber, this harness enhances your park adventure with a cyberpunk edge. Perfect for cosplay or immersive role-play, it features adjustable straps and a holographic badge displaying Cantonese glyphs. Rechargeable via USB, it pulses with neon blues and pinks, mirroring Kowloon’s night markets. Durable yet stylish, it’s a must-have for tech enthusiasts exploring the park’s robotic realms. Embrace the fusion of tradition and tomorrow with every step!",
+        price:100,
+        size:"large",
+        link:"/productdetail"
+    },
+    {
+        id:2,
+        img:"./img/onlineshop/products/product02.webp",
+        title:'Cyber Blade Replica',
+        description:"Wield the Cyber Blade Replica, a stunning prop from the Cyber Blade Challenge, infused with Hong Kong’s martial arts spirit and cyberpunk flair. This foam-tipped sword glows with embedded LEDs, mimicking the neon-drenched alleys of Kowloon. Crafted for safety and style, it features a retractable design and a hilt engraved with futuristic Chinese characters. Ideal for fans and collectors, it doubles as a light-up display piece. Powered by a compact battery, it’s perfect for park reenactments or home decor, blending tradition with cutting-edge tech in every swing! ",
+        price:200,
+        size:"small",
+        link:"/productdetail"
+    },
+    {
+        id:3,
+        img:"./img/onlineshop/products/product03.webp",
+        title:'Holo-Drone Toy',
+        description:"Unleash the Holo-Drone Toy, a miniature marvel inspired by the park’s futuristic skies over Hong Kong. This remote-controlled drone projects holographic patterns of neon cityscapes, complete with Cantonese street signs. Made with durable plastic and LED accents, it hovers silently, mimicking the drones of our cyberpunk attractions. Perfect for kids and collectors, it includes a charging dock styled like a Kowloon vendor stall. Fly it through your own neon jungle at home, blending high-tech play with Asian-inspired design for endless fun! ",
+        price:300,
+        size:"Medium",
+        link:"/productdetail"
+    },
+    {
+        id:4,
+        img:"./img/onlineshop/products/product04.webp",
+        title:'Quantum Jacket',
+        description:"Wrap yourself in the Quantum Jacket, a cutting-edge clothing piece reflecting Hong Kong’s cyberpunk skyline. This jacket features embedded LED threads that pulse in sync with park music, crafted from water-resistant fabric with a holographic logo. Inspired by the Quantum Leap Tower, it blends traditional Chinese embroidery with futuristic design. Adjustable cuffs and a hidden pocket for gadgets make it practical for park explorers. Glow through misty nights, embodying the fusion of East and dystopia in every wearable thread! ",
+        price:400,
+        size:"Medium",
+        link:"/productdetail"
+    },
+    
+];
 export const productbanners=[
     {
         id:1,

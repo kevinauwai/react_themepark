@@ -17,7 +17,7 @@ const Facilities = () => {
               <li key={attrIndex} className='stat-card' style={{ marginBottom: '20px', border: '1px solid #ccc', padding: '10px', borderRadius: '5px' }}>
                 <h3>{attraction.name}</h3>
                 <img className="facilities-img" src={attraction.image} alt={attraction.name} />
-                <p className='facilities-description'>{attraction.description}</p>
+                <div className='facilities-description'>{attraction.description}</div>
                 <p><strong>Thrill Level:</strong> {attraction.thrill}</p>
                 <p>
                   <Link to="/facilitiesRobots" className="facilities-tickets-button text-decoration-none">Discover More</Link>

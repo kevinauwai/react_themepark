@@ -194,7 +194,7 @@ export const secitonitems=[
         size:"Medium"
     },
 ];
- export const productlist=[
+ export const hot_productlist=[
     {
         id:1,
         img:"./img/onlineshop/products/product01.webp",

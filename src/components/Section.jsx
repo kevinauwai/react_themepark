@@ -2,7 +2,7 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
-import {news,productlist,hot_hotels,hot_tikets,hot_restaurants} from '../data';
+import {news,hot_productlist,hot_hotels,hot_tikets,hot_restaurants} from '../data';
 import React, { useState } from "react";
 import { Container } from 'react-bootstrap';
 import {Link} from "react-router-dom";
@@ -13,7 +13,7 @@ const Section = ({title}) => {
       sections=[...news];
      break;
      case "products":
-      sections=[...productlist];
+      sections=[...hot_productlist];
       break;
       case "hotel":
       sections=[...hot_hotels];

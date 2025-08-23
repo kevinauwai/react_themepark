@@ -29,11 +29,12 @@ const cartSlice=createSlice({
             if(findItem == undefined){
                 return;
             }
-            // else if(findItem.quantity===1){
-            //     state.itemList=state.itemList.filter((item)=>item.id!=action.payload.id);
+            else if(findItem.quantity<1){
+                state.itemList=state.itemList.filter((item)=>item.id===action.payload.id);
 
-            // }
+            }
             else{
+
                 findItem.quantity--;
                 findItem.totalPrice-=findItem.price;
                 state.totalQuantity--;

@@ -78,6 +78,10 @@
 }
 .product_detail_info{
   color:white;
+  .counter{
+    background-color: white;
+    width: 3rem;
+  }
 }
 .input-group{
   width: 50%;
@@ -88,6 +92,10 @@
   h2{
     color:var(--secondary);
     text-transform: uppercase;
+  }
+  .counter{
+    width: 3rem;
+    background-color: white;
   }
 }
 .cart_title{

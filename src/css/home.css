@@ -162,11 +162,28 @@ footer{
         flex-direction: column;
         h3{
             text-transform: uppercase;
+            color:var(--text-primary);
+            line-height: 1.6;
+             text-transform: capitalize;
+            font-weight: 400 !important;
+            background:  linear-gradient(0deg,#00ffff,#ff00ff);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            letter-spacing: 3px;
+            text-transform: uppercase;
         }
         a{
             text-decoration: none;
             color:var(--text-primary);
             line-height: 1.6;
+             text-transform: capitalize;
+            font-weight: 400 !important;
+            background:  linear-gradient(0deg,#00ffff,#ff00ff);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            letter-spacing: 3px;
             text-transform: uppercase;
         }
     }

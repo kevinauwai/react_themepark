@@ -45,7 +45,7 @@ const Footer = () => <footer className="bg-dark text-white text-center py-3 ">
                <a href="https://weixin.com/" target="_blank"><i class="fa-brands fa-weixin"></i></a>
            </div>
            <p>
-            <i class="fa-solid fa-phone"></i>:888-8888888
+            <a href="#"><i class="fa-solid fa-phone"></i>:888-8888888</a>
            </p>
            <p>
             <a href="mailto:info@cphk.com"><i class="fa-solid fa-envelope"></i>:info@cphk.com</a>
@@ -56,7 +56,7 @@ const Footer = () => <footer className="bg-dark text-white text-center py-3 ">
 
             </Col>
           </Row>
-          <div className="pt-3 copyright">&copy; {new Date().getFullYear()} erb project group</div>
+          <div className="pt-3 copyright">&copy; {new Date().getFullYear()} syber punk project group</div>
         </Container>
       </footer>
 

@@ -23,7 +23,6 @@ import { FreeMode, Navigation, Thumbs } from "swiper/modules";
 const ProductDetail = () => {
   const [thumbsSwiper, setThumbsSwiper] = useState(null);
   const { state } = useLocation();
-  const [qty, setqtystate] = useState(0);
   let product = { ...state };
 
   let products = useSelector((state) =>
@@ -31,9 +30,7 @@ const ProductDetail = () => {
   );
   useEffect(() => {
     console.log(products);
-    if (products.length > 0) {
-      setqtystate(products[0].quantity);
-    }
+    
 // 在组件挂载时将页面滚动到顶部
     window.scrollTo(0, 0);
   }, []);
@@ -102,14 +99,10 @@ const ProductDetail = () => {
     //end
   };
   const increase = () => {
-    setqtystate(qty + 1);
     dispatch(addToCart({ ...product }));
   };
   const decrease = () => {
-    if (qty >= 1) {
-      setqtystate(qty - 1);
-      dispatch(removeFromCart({ ...product }));
-    }
+   dispatch(removeFromCart({ ...product }));
   };
 
   return (
@@ -141,12 +134,12 @@ const ProductDetail = () => {
               >
                 -
               </Button>
-              <Form.Control
-                aria-label="input number"
-                aria-describedby="basic-addon1"
-                value={qty}
-              />
-
+            <Form.Control
+                            className="search"
+                            aria-label="search"
+                            aria-describedby="basic-addon1"
+                            value={products.length>0?products[0].quantity:0}
+                          />
               <Button
                 className="add-btn"
                 data-img={product.img}

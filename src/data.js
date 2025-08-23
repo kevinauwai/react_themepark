@@ -503,26 +503,26 @@ export const hot_restaurants = [
         id: 1,
         img: "/img/Restaurant/foodA1.webp",
         title: "Pixel Hamburger",
-        link:""
+        link:"/restaurants"
     },
     {   
         id: 2,
         img:"/img/Restaurant/foodB1.webp",
         title: "Chinese Buffet",
-        link:""
+        link:"/restaurants"
     },
     {   
         id: 3,
         img:"/img/Restaurant/foodC1.webp",
         title: "Beef Rice",
-        link:""
+        link:"/restaurants"
     },
     {
     id: 4,
        
         img:"/img/Restaurant/foodD1.webp",
         title: "Sinangag",
-        link:""
+        link:"/restaurants"
     },
 ];
 export const foodkiosks = [

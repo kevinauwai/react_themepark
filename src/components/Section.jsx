@@ -35,7 +35,7 @@ const Section = ({title}) => {
         <Row >
         {sections.slice(0, 3).map((section)=>
         <Col key={section.id} xs={12} lg={4} className='p-2'>
-            <Card style={{ width: '100%' }} className='glass-card'>
+            <Card style={{ width: '100%' }} className='glass-card stat-card'>
                 <Card.Img variant="top" src={section.img} />
                 <Card.Body>
                     <Card.Title>{section.title}</Card.Title>

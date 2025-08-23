@@ -75,7 +75,7 @@ const Product = (product) => {
   };
   return (
     <>
-      <Card style={{ width: "100%" }} className="glass-card">
+      <Card style={{ width: "100%" }} className="glass-card stat-card">
         <Card.Img variant="top" src={product.img} />
         <Card.Body>
           <Card.Title

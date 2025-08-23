@@ -1,6 +1,7 @@
 import React from 'react';
 import { robots } from '../../data';
 import "../../css/facilitiesrobots.css";
+import { Link } from 'react-router-dom';
 
 const FacilitiesRobots = () => {
   return (
@@ -28,7 +29,7 @@ const FacilitiesRobots = () => {
           ))}
         </div>
       </section>
-      <button className="facilities-tickets-button"> Get Tickets</button>
+      <Link to="/tickets" className='facilities-tickets-button'>Get Tickets</Link>
     </div>
   );
 };

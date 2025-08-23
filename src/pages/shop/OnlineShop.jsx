@@ -68,7 +68,7 @@ const OnlineShop = () => {
               item.title.toLowerCase().includes(filtervalue.toLowerCase())
             )
             .map((product) => (
-              <Col key={product.id} xs={12} md={6} lg={3}>
+              <Col key={product.id} xs={12} md={6} lg={4}>
                 <Product {...product} />
               </Col>
             ))}

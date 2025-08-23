@@ -1,6 +1,6 @@
 import "./index.css";
 import "./css/home.css";
-// import './CSS/card.css';
+import './CSS/card.css';
 import './css/victor.css'
 import Navmenu from "./components/Navmenu";
 import "bootstrap/dist/css/bootstrap.min.css";
@@ -19,14 +19,14 @@ import Facilities from "./pages/facilities/Facilities";
 import FacilitiesRobots from "./pages/facilities/FacilitiesRobots";
 import Tickets from "./pages/ticketing/Tickets";
 //tongny
-// import Restaurants from "./pages/Restaurants/Restaurants";
-// import Restaurant_Booking from "./pages/Restaurants/Components/Restaurant_Booking";
-// import FoodKiosks from "./pages/FoodKiosks/FoodKiosks";
-// import SpecialFoods from "./pages/SpecialFoods/SpecialFoods";
-// import SpecialFoods_Request from "./pages/SpecialFoods/Components/SpecialFood_Request";
-// import Subscription from "./pages/Subscription/Subscription";
-// import Subscription_Form from "./pages/Subscription/Components/Subscription_Form";
-// import Login from "./pages/Login/Login";
+import Restaurants from "./pages/Restaurants/Restaurants";
+import Restaurant_Booking from "./pages/Restaurants/Components/Restaurant_Booking";
+import FoodKiosks from "./pages/FoodKiosks/FoodKiosks";
+import SpecialFoods from "./pages/SpecialFoods/SpecialFoods";
+import SpecialFoods_Request from "./pages/SpecialFoods/Components/SpecialFood_Request";
+import Subscription from "./pages/Subscription/Subscription";
+import Subscription_Form from "./pages/Subscription/Components/Subscription_Form";
+import Login from "./pages/Login/Login";
 
 //vitor
 import Contact_Us from './pages/contact_us/Contact_Us';
@@ -56,14 +56,14 @@ function App() {
           <Route path="/facilities" element={<Facilities />} />
           <Route path="/facilitiesRobots" element={<FacilitiesRobots />} />
           <Route path="/tickets" element={<Tickets />} />
-          {/* <Route path="/restaurants" element={<Restaurants />} />
+          <Route path="/restaurants" element={<Restaurants />} />
           <Route path="/restaurant_Booking" element={<Restaurant_Booking />} />
           <Route path="/foodKiosks" element={<FoodKiosks />} />
           <Route path="/specialFoods" element={<SpecialFoods />} />
           <Route path="/specialFoods_Request" element={<SpecialFoods_Request />}/>
           <Route path="/subscription" element={<Subscription />} />
           <Route path="/subscription_Form" element={<Subscription_Form />} />
-          <Route path="/login" element={<Login />} /> */}
+          <Route path="/login" element={<Login />} />
         <Route path = "/hotel_rooms" element = {<Hotel_Rooms />} />
         <Route path = "/hotel_rooms_deluxe" element = {<Hotel_Rooms_Deluxe />} />
         <Route path = "/hotel_rooms_grand" element = {<Hotel_Rooms_Grand />} />

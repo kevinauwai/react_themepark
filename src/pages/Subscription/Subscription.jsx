@@ -3,6 +3,7 @@ import Subscribe from "./Components/Subscribe";
 
 const Subscription = () => {
   return (
+  <div className="tony">
     <div className="subscription" id="subscription">
       <div className="section-title" id="section-title">subscription plan</div>
       <div className="subscription-cards">
@@ -11,6 +12,7 @@ const Subscription = () => {
         ))}
       </div>
     </div>
+  </div>
     );
   };
 

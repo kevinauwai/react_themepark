@@ -1,45 +1,3 @@
-// import restaurant1 from "/img/Restaurant/restaurant1.webp";
-// import restaurant2 from "/img/Restaurant/restaurant2.webp";
-// import restaurant3 from "/img/Restaurant/restaurant3.webp";
-// import restaurant4 from "/img/Restaurant/restaurant4.webp";
-// import foodA1 from "/img/Restaurant/foodA1.webp";
-// import foodA2 from "/img/Restaurant/foodA2.webp";
-// import foodA3 from "/img/Restaurant/foodA3.webp";
-// import foodB1 from "/img/Restaurant/foodB1.webp";
-// import foodB2 from "/img/Restaurant/foodB2.webp";
-// import foodB3 from "/img/Restaurant/foodB3.webp";
-// import foodC1 from "/img/Restaurant/foodC1.webp";
-// import foodC2 from "/img/Restaurant/foodC2.webp";
-// import foodC3 from "/img/Restaurant/foodC3.webp";
-// import foodD1 from "/img/Restaurant/foodD1.webp";
-// import foodD2 from "/img/Restaurant/foodD2.webp";
-// import foodD3 from "/img/Restaurant/foodD3.webp";
-// //================================================
-// import foodkiosk1 from "/img/FoodKiosk/kiosk1.webp";
-// import foodkiosk2 from "/img/FoodKiosk/kiosk2.webp";
-// import foodkiosk3 from "/img/FoodKiosk/kiosk3.webp";
-// import foodkiosk4 from "/img/FoodKiosk/kiosk4.webp";
-// import snacksA1 from "/img/FoodKiosk/snacksA1.webp";
-// import snacksA2 from "/img/FoodKiosk/snacksA2.webp";
-// import snacksA3 from "/img/FoodKiosk/snacksA3.webp";
-// import snacksB1 from "/img/FoodKiosk/snacksB1.webp";
-// import snacksB2 from "/img/FoodKiosk/snacksB2.webp";
-// import snacksB3 from "/img/FoodKiosk/snacksB3.webp";
-// import snacksC1 from "/img/FoodKiosk/snacksC1.webp";
-// import snacksC2 from "/img/FoodKiosk/snacksC2.webp";
-// import snacksC3 from "/img/FoodKiosk/snacksC3.webp";
-// import snacksD1 from "/img/FoodKiosk/snacksD1.webp";
-// import snacksD2 from "/img/FoodKiosk/snacksD2.webp";
-// import snacksD3 from "/img/FoodKiosk/snacksD3.webp";
-// //================================================
-// import specialfood1 from "/img/SpecialFood/food1.webp";
-// import specialfood2 from "/img/SpecialFood/food2.webp";
-// import specialfood3 from "/img/SpecialFood/food3.webp";
-// import specialfood4 from "/img/SpecialFood/food4.webp";
-// //================================================
-// import subscription1 from "/img/subscription/subscription1.webp";
-// import subscription2 from "/img/subscription/subscription2.webp";
-// import subscription3 from "/img/subscription/subscription3.webp";
 export const navlist=[
     {
         id:1,
@@ -47,12 +5,12 @@ export const navlist=[
         link:"/",
         submenuid:0
     },
-    {
-        id:2,
-        text:"latest news",
-        link:"/news",
-        submenuid:0
-    },
+    // {
+    //     id:2,
+    //     text:"latest news",
+    //     link:"/news",
+    //     submenuid:0
+    // },
     {
         id:3,
         text:"facilitiese",
@@ -73,9 +31,9 @@ export const navlist=[
     },
     {
         id:6,
-        text:"restaurant",
-        link:"/restaurant",
-        submenuid:0
+        text:"restaurants",
+        link:"/restaurants",
+        submenuid:2
     },
     {
         id:7,
@@ -114,7 +72,31 @@ export const navlist_sub=[
         pid:4,
         text:"hotel booking",
         link:"/hotel_booking"
-    }
+    },
+    {
+        id:5,
+        pid:6,
+        text:"restaurants",
+        link:"/restaurants"
+    },
+    {
+        id:6,
+        pid:6,
+        text:"foodKiosks",
+        link:"/foodKiosks"
+    },
+    {
+        id:7,
+        pid:6,
+        text:"specialFoods",
+        link:"/specialFoods"
+    },
+    {
+        id:8,
+        pid:6,
+        text:"subscription",
+        link:"/subscription"
+    },
 ];
 export const secitonitems=[
     {
@@ -315,7 +297,7 @@ export const news=[
         description:`Beyond discounts, the Heatwave Hacker Deals promotion introduces interactive perks to enhance the shopping experience. Customers who purchase select items unlock access to a summer-themed app featuring cooling tips, hydration reminders, and virtual scavenger hunts with chances to win additional tech prizes. The campaign also emphasizes sustainability, with many products made from eco-friendly materials and a portion of proceeds supporting renewable energy initiatives. By blending affordability, interactivity, and environmental consciousness, this promotion redefines summer shopping, appealing to tech-savvy consumers who value both innovation and responsibility.`
     },
 ];
-
+//tracy data
 export const zones = [
   {
     name: "Signature Experiences",
@@ -375,136 +357,197 @@ export const robots = [
     profilePic: "/img/facilities/ninja01.webp",
   },
 ];
-/*
+export const hot_tikets=[
+    {
+       id:1,
+       img:'/img/facilities/coaster00.webp',
+       title:'Neon Vortex Ride',
+       info:"Step into the heart-pounding world of the Neon Vortex Ride, where the pulsating energy of a cyberpunk Hong Kong comes alive in a whirlwind of speed and spectacle.",
+       price:0,
+       link:"/facilities"
+   },
+    {
+       id:2,
+       img:'/img/facilities/bumper02.webp',
+       title:'Holo-Dome Bumper',
+       info:"Welcome to the Holo-Dome Arena, a revolutionary bumper car experience that catapults classic fun into the cyberpunk era.",
+       price:0,
+       link:"/facilities"
+   },
+    {
+       id:3,
+       img:'/img/facilities/robots02.webp',
+       title:'Blade Challenge',
+       info:"Dive into the Cyber Blade Challenge, an immersive robot-related experience that thrusts you into the gritty underbelly of a cyberpunk Hong Kong.",
+       price:0,
+       link:"/facilities"
+   },
+        {
+       id:4,
+       img:'/img/facilities/tower01.webp',
+       title:'Quantum Leap Tower',
+       info:"Ascend to new heights in the Quantum Leap Tower, a cyberpunk-related experience that blends heart-stopping drops with mind-bending VR.",
+       price:0,
+       link:"/facilities"
+   },
+
+];
+//tony data
 export const restaurants = [
     {   
         id: 1,
-        image: restaurant1,
+        image: '/img/Restaurant/restaurant1.webp',
         location: "Futuristic land",
         name: "Pixelfood",
         maininfo: "Pixelfood offers a warm and inviting dining experience that celebrates the rich flavors of Western cuisine.",
-        itemimage1: foodA1,
-        iteminfo1: "Pixel Burger",
+        itemimage1: "/img/Restaurant/foodA1.webp",
+        iteminfo1: "Pixel Hamburger",
         itemprice1: 40,
-        itemimage2: foodA2,
+        itemimage2: "/img/Restaurant/foodA2.webp",
         iteminfo2: "Pixel Steak",
         itemprice2: 60,
-        itemimage3: foodA3,
+        itemimage3: "/img/Restaurant/foodA3.webp",
         iteminfo3: "Pixel Healthy Set",
         itemprice3: 80,
     },
     {   
         id: 2,
-        image: restaurant2,
+        image: "/img/Restaurant/restaurant2.webp",
         location: "Dystopian World",
         name: "Griddiner",
         maininfo: "Welcome to The Griddiner, where culinary abundance meets warm hospitality in a vibrant, family-friendly setting.",
-        itemimage1: foodB1,
+        itemimage1:"/img/Restaurant/foodB1.webp",
         iteminfo1: "Chinese Buffet",
-        itemprice1: "300 per person",
-        itemimage2: foodB2,
+        itemprice1:"300 per person",
+        itemimage2:"/img/Restaurant/foodB2.webp",
         iteminfo2: "Western Buffet",
-        itemprice2: "300 per person",
-        itemimage3: foodB3,
+        itemprice2:"300 per person",
+        itemimage3:"/img/Restaurant/foodB3.webp",
         iteminfo3: "Fusion Buffet",
-        itemprice3: "300 per person",
+        itemprice3:"300 per person",
     },
     {   
         id: 3,
-        image: restaurant3,
+        image: "/img/Restaurant/restaurant3.webp",
         location: "High-tech centre",
         name: "Synthfood",
         maininfo: "Savor expertly crafted dishes such as fresh sushi and flavorful ramen, all prepared with high-quality ingredients. ",
-        itemimage1: foodC1,
+        itemimage1:"/img/Restaurant/foodC1.webp",
         iteminfo1: "Beef Rice",
         itemprice1: 80,
-        itemimage2: foodC2,
+        itemimage2:"/img/Restaurant/foodC2.webp",
         iteminfo2: "Japanese Sushi set",
         itemprice2: 80,
-        itemimage3: foodC3,
+        itemimage3:"/img/Restaurant/foodC3.webp",
         iteminfo3: "Deli Ramen",
         itemprice3: 80,
     },
     {
     id: 4,
-        image: restaurant4,
+        image: "/img/Restaurant/restaurant4.webp",
         location: "Neon Space",
         name: "Lyonrice",
         maininfo: "Lyonrice is a well-loved restaurant that specializes in serving flavorful and satisfying Filipino-style rice meals.",
-        itemimage1: foodD1,
+        itemimage1:"/img/Restaurant/foodD1.webp",
         iteminfo1: "Sinangag",
         itemprice1: 80,
-        itemimage2: foodD2,
+        itemimage2:"/img/Restaurant/foodD2.webp",
         iteminfo2: "Sticky Rice Cake",
         itemprice2: 80,
-        itemimage3: foodD3,
+        itemimage3:"/img/Restaurant/foodD3.webp",
         iteminfo3: "Yellow Rice",
         itemprice3: 80,
     },
 ];
-
+export const hot_restaurants = [
+    {   
+        id: 1,
+        img: "/img/Restaurant/foodA1.webp",
+        title: "Pixel Hamburger",
+        link:""
+    },
+    {   
+        id: 2,
+        img:"/img/Restaurant/foodB1.webp",
+        title: "Chinese Buffet",
+        link:""
+    },
+    {   
+        id: 3,
+        img:"/img/Restaurant/foodC1.webp",
+        title: "Beef Rice",
+        link:""
+    },
+    {
+    id: 4,
+       
+        img:"/img/Restaurant/foodD1.webp",
+        title: "Sinangag",
+        link:""
+    },
+];
 export const foodkiosks = [
     {   
         id: 1,
-        image: foodkiosk1,
+        image: "/img/FoodKiosk/kiosk1.webp",
         location: "Futuristic land",
         name: "CYER",
         maininfo: "An accessible place where users can relax while enjoying a coffee or snack in a lively, technology-focused setting.",
-        itemimage1: snacksA1,
+        itemimage1:"/img/FoodKiosk/snacksA1.webp",
         iteminfo1: "Ice Coffee",
         itemprice1: 30,
-        itemimage2: snacksA2,
+        itemimage2: "/img/FoodKiosk/snacksA2.webp",
         iteminfo2: "Healthy Sandwich",
         itemprice2: 40,
-        itemimage3: snacksA3,
+        itemimage3: "/img/FoodKiosk/snacksA3.webp",
         iteminfo3: "Coffee Cake",
         itemprice3: 25,
     },
     {   
         id: 2,
-        image: foodkiosk2,
+        image: "/img/FoodKiosk/kiosk2.webp",
         location: "Neon Space",
         name: "NeonFeast",
         maininfo: "It offers a vibrant experience featuring authentic Thai snacks, prepared with fresh ingredients and bold, aromatic flavors.",
-        itemimage1: snacksB1,
+        itemimage1:"/img/FoodKiosk/snacksB1.webp",
         iteminfo1: "Mee Krob",
         itemprice1: 40,
-        itemimage2: snacksB2,
+        itemimage2:"/img/FoodKiosk/snacksB2.webp",
         iteminfo2: "Moo Ping",
         itemprice2: 40,
-        itemimage3: snacksB3,
+        itemimage3:"/img/FoodKiosk/snacksB3.webp",
         iteminfo3: "Thai Fried Chicken",
         itemprice3: 40,
     },
     {   
         id: 3,
-        image: foodkiosk3,
+        image: "/img/FoodKiosk/kiosk3.webp",
         location: "Dystopian World",
         name: "DigitalBento",
         maininfo: "It offers a casual, accessible way to enjoy Japanese snacks with an emphasis on quality and quick service.",
-        itemimage1: snacksC1,
+        itemimage1: "/img/FoodKiosk/snacksC1.webp",
         iteminfo1: "Takoyaki",
         itemprice1: 40,
-        itemimage2: snacksC2,
+        itemimage2: "/img/FoodKiosk/snacksC2.webp",
         iteminfo2: "Okonomiyaki",
         itemprice2: 40,
-        itemimage3: snacksC3,
+        itemimage3: "/img/FoodKiosk/snacksC3.webp",
         iteminfo3: "Gyoza",
         itemprice3: 40,
     },
     {
         id: 4,
-        image: foodkiosk4,
+        image: "/img/FoodKiosk/kiosk4.webp",
         location: "High-tech centre",
         name: "SweetBytes",
         maininfo: "It offers a fast-paced treat experience featuring a variety of desserts, crafted with fresh ingredients and appealing flavors. ",
-        itemimage1: snacksD1,
+        itemimage1: "/img/FoodKiosk/snacksD1.webp",
         iteminfo1: "Icecream",
         itemprice1: 20,
-        itemimage2: snacksD2,
+        itemimage2: "/img/FoodKiosk/snacksD2.webp",
         iteminfo2: "Cannoli",
         itemprice2: 20,
-        itemimage3: snacksD3,
+        itemimage3: "/img/FoodKiosk/snacksD3.webp",
         iteminfo3: "Egg Waffle",
         itemprice3: 30,
     },
@@ -513,25 +556,25 @@ export const foodkiosks = [
 export const specialfoods = [
     {  
         id: 1,
-        specialfoodsimg: specialfood1, 
+        specialfoodsimg: "/img/SpecialFood/food1.webp", 
         title: "Kids meal",
         description: "Here you can enjoy both adorable kids plates and substantial main dishes. However, you may also send requests to the restaurants by pressing the below button preferably 24 hours in advance. "
     },
     {  
         id: 2,
-        specialfoodsimg: specialfood2, 
+        specialfoodsimg: "/img/SpecialFood/food2.webp", 
         title: "Plant-based menu items",
         description: "Plant-based meal is available in the park and at the hotels of the Cyberpunk Hong Kong. However, you may also send requests to the restaurants by pressing the below button preferably 24 hours in advance. "
     },
     {  
         id: 3,
-        specialfoodsimg: specialfood3, 
+        specialfoodsimg: "/img/SpecialFood/food3.webp", 
         title: "Halal Cuisine",
         description: "Halal-certified food is available in the park and at the hotels of the Cyberpunk Hong Kong. However, you may send you concerns to the restaurants by pressing the below button preferably 24 hours in advance."
     },
     {  
         id: 4,
-        specialfoodsimg: specialfood4, 
+        specialfoodsimg: "/img/SpecialFood/food4.webp", 
         title: "Dietary requirements",
         description: "Many Cyberpunk Hong Kong restaurants can accommodate the common food allergies. However, you may also send requests to the restaurants by pressing the below button preferably 24 hours in advance. "
     },
@@ -540,19 +583,19 @@ export const specialfoods = [
 export const subscription = [
         {  
         id: 1,
-        image: subscription1, 
+        image: "/img/subscription/subscription1.webp", 
         title: "Copper",
         price: "HK$599 per year",
         advantage1:"Unlimited access for all operation weekdays",
         advantage2:"10% off car parking discount",
         advantage3:"10% off shopping discount",
         advantage4:"10% off hotel, food and Beverage discount",
-        advantage5:"Birthday offers to celebrate your western birthday date",
+        advantage5:"Birthday offers to celebrate your birthday date",
 
     },
     {  
         id: 2,
-        image: subscription2, 
+        image: "/img/subscription/subscription2.webp", 
         title: "Sliver",
         price: "HK$799 per year",
         advantage1:"Unlimited access for all operations days",
@@ -563,7 +606,7 @@ export const subscription = [
     },
     {  
         id: 3,
-        image: subscription3, 
+        image: "/img/subscription/subscription3.webp", 
         title: "Gold",
         price: "HK$999 per year",
         advantage1:"Unlimited access for all operations days",
@@ -572,7 +615,7 @@ export const subscription = [
         advantage4:"30% off hotel, food and Beverage discount",
         advantage5:"Birthday offers to celebrate your birthday month"
     },
-]*/
+];
 
 //vitor data
 export const hotel_rooms = [
@@ -1271,4 +1314,31 @@ export const job_openings = [
         benefits3: '14 days Paid Leave',
         benefits4: '17 days Public Holiday',
     },
+];
+export const hot_hotels=[
+    {
+       id: 1,
+       img: "/img/hotel_rooms/hotel_rooms_001.webp",
+       title: "standard room",
+       link: "/hotel_rooms_standard",
+   },
+   {
+       id: 2,
+       img: "/img/hotel_rooms/hotel_rooms_002.webp",
+       title: "deluxe room",
+       link: "/hotel_rooms_deluxe",
+   },
+   {
+       id: 3,
+       img: "/img/hotel_rooms/hotel_rooms_003.webp",
+       title: "premier room",
+       link: "/hotel_rooms_premier",
+   },
+   {
+       id: 4,
+       img: "/img/hotel_rooms/hotel_rooms_004.webp",
+       title: "grand room",
+       link: "/hotel_rooms_grand",
+   },
+
 ];

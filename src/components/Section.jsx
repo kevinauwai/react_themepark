@@ -2,7 +2,7 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
-import {news,productlist} from '../data';
+import {news,productlist,hot_hotels,hot_tikets,hot_restaurants} from '../data';
 import React, { useState } from "react";
 import { Container } from 'react-bootstrap';
 import {Link} from "react-router-dom";
@@ -13,15 +13,28 @@ const Section = ({title}) => {
       sections=[...news];
      break;
      case "products":
-      sections=[...productlist]
+      sections=[...productlist];
+      break;
+      case "hotel":
+      sections=[...hot_hotels];
+      break;
+      case "tickets":
+      sections=[...hot_tikets];
+      break;
+      case "restaurants":
+      sections=[...hot_restaurants];
+      console.log(sections)
+      break;
+
   }
+  
   return (
     <div className='section_container'>
       <h2 className='section-title'>{title}</h2>
 
         <Row >
-        {sections.slice(0, 4).map((section)=>
-        <Col key={section.id} xs={12} lg={3} className='p-2'>
+        {sections.slice(0, 3).map((section)=>
+        <Col key={section.id} xs={12} lg={4} className='p-2'>
             <Card style={{ width: '100%' }} className='glass-card'>
                 <Card.Img variant="top" src={section.img} />
                 <Card.Body>

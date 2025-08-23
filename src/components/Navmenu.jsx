@@ -81,7 +81,7 @@ function Navmenu() {
               <span className="visually-hidden">items in cart</span>
             </span>
           </div> */}
-            <Link className="nav-link">Login</Link>
+            <Link to="/login" className="nav-link">Login</Link>
           </Nav>
         </Navbar.Collapse>
         <div className="position-relative-cart">

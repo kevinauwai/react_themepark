@@ -85,6 +85,10 @@
 .cart{
   min-height: 80vh;
   color:white;
+  h2{
+    color:var(--secondary);
+    text-transform: uppercase;
+  }
 }
 .cart_title{
   color:var(--primary);
@@ -284,6 +288,9 @@
   }
   .onlineshop_cart_info{
     width: 100%;
+    h2{
+      color:var(--secondary);
+    }
   }
   .glass-card{
     width: 100%;

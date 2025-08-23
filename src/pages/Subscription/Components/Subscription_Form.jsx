@@ -1,5 +1,6 @@
 const Subscription_Form = () => {
    return (
+  <div className="tony">
    <div className="subscription-form">
       <div className="section-title" id="section-title">Subscription</div>
         <div className="subscribe-contact-content">
@@ -61,6 +62,7 @@ const Subscription_Form = () => {
           <button type="submit" className="button">SEND MESSAGE</button>
       </form>
       </div>
+    </div>
     </div>
    );
 };

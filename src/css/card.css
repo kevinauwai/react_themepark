@@ -24,7 +24,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-
+.tony{
 h1 {
     font-size: 2.5rem;
     text-align: center;
@@ -58,11 +58,12 @@ li {
   font-family: 'Orbitron', sans-serif;
   font-size: 3rem;
   font-weight: 700;
+  width: 100% !important;
   margin-bottom: 50px;
   text-align: center;
   position: relative;
   display: inline-block;
-  width: 100%;
+  width: auto;
   letter-spacing: 4px;
   text-transform: uppercase;
   text-shadow: 0 0 10px rgba(0, 255, 255, 0.8), 
@@ -91,21 +92,18 @@ li {
 }
 
 .restaurants,
+.restaurant-booking,
 .foodkiosks,
 .specialfoods,
-.special-food-request,
+.specialfood-flex-container,
 .subscription,
-.subscribe-form,
-.login {            
-  padding: 100px 50px;
-  max-width: 1200px;
-  margin: 0 auto;
-  position: relative;
+.subscription-form,
+.login {
+  padding-top: 20px;
 }
-
 .restaurant-cards,
 .foodkiosk-cards {
-    width: 100%;
+    width: auto;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 30px;
@@ -117,9 +115,11 @@ li {
 .foodkiosk-card,
 .subscription-card,
 .restaurant-contact-card,
-.specialfoods-contact-card,
 .subscribe-contact-card,
-.login-card {
+.specialfoods-contact-card,
+.login-card,
+.specialfood-img-card,
+.subscribe-img-card {
     background: rgba(255, 255, 255, 0.05);
     backdrop-filter: blur(10px);
     border-radius: 20px;
@@ -142,9 +142,11 @@ li {
 .foodkiosk-card:hover,
 .subscription-card:hover,
 .restaurant-contact-card:hover,
-.specialfoods-contact-card:hover,
 .subscribe-contact-card:hover,
-.login-card:hover {
+.specialfoods-contact-card:hover,
+.login-card:hover,
+.specialfood-img-card:hover,
+.subscribe-img-card:hover {
   transform: translateY(-10px);
   box-shadow: 0 20px 40px rgba(0, 255, 255, 0.2);
   border-color: var(--primary);
@@ -154,9 +156,11 @@ li {
 .foodkiosk-card::after,
 .subscription-card::after,
 .restaurant-contact-card::after,
-.specialfoods-contact-card::after,
 .subscribe-contact-card::after,
-.login-card:hover::after {
+.specialfoods-contact-card::after,
+.login-card:hover::after,
+.specialfood-img-card:hover::after,
+.subscribe-img-card:hover::after  {
   content: '';
   position: absolute;
   top: 0;
@@ -173,12 +177,14 @@ li {
 }
 
 .restaurant-card:hover::after,
-.foodkiosk:hover::after,
+.foodkiosk-card:hover::after,
 .subscription-card:hover::after,
 .restaurant-contact-card:hover::after,
+.subscribe-contact-card:hover::after,
 .specialfoods-contact-card:hover::after,
-.subscribe-contact-card:hover::after
-.login-card:hover::after {
+.login-card:hover::after,
+.specialfood-img-card:hover::after,
+.subscribe-img-card:hover::after  {
   opacity: 1;
 }
 
@@ -194,7 +200,7 @@ li {
     width: 100%;
     z-index: 1;
     p {
-        font-size: 1.8rem;
+        font-size: 1.5rem;
         position: absolute;
         background: #000000 ;
         color: white;
@@ -241,55 +247,9 @@ li {
   float: left;
   width: 33.33%;
   padding: 5px;
-}
-
-.specialfoods-container {
-  display: grid;
-  grid-template-columns: 1fr 2fr;
-  gap: 50px;
-  align-items: center;
-  padding: 20px;
-}
-
-.specialfoods-img-wrapper {
-  position: relative;
-  border-radius: 20px;
-  overflow: hidden;
-  background: linear-gradient(45deg, var(--primary), var(--secondary));
-  padding: 10px;
-}
-
-.specialfoods-image {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  border-radius: 17px;
-  background: var(--bg-dark);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: var(--primary);
-}
-
-.specialfoods-content {
-  h3 {
-  font-family: 'Orbitron', sans-serif;
-  font-size: 2rem;
-  font-weight: 700;
-  margin-bottom: 20px;
-  background: linear-gradient(90deg, var(--primary), var(--secondary));
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  text-align: center;
-  }
-  p {
-  font-size: 1.1rem; 
-  line-height: 1.8; 
-  margin-bottom: 20px;
-  text-align: center;
+  li {
+    height: 2.5rem;
+    font-size: 18px;
   }
 }
 
@@ -322,6 +282,120 @@ li {
   border-radius: 50%;
   transform: translate(-50%, -50%);
   transition: all 0.5s ease;
+}
+
+.subscribe-img-card,
+.specialfood-img-card {
+  height: auto;
+  padding: 30px;
+  border-radius: 1em;
+}
+
+.subscribe-img-card .subscribe-flex-container,
+.specialfood-img-card .specialfood-flex-container {
+  justify-content: center;
+  align-items: center;
+}
+
+.subscribe-img-card--row .subscribe-flex-container,
+.specialfood-img-card--row .specialfood-flex-container {
+  flex-direction: row;
+}
+
+.subscribe-img-card--row-reverse h1 {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+  background: linear-gradient(90deg, var(--primary), var(--secondary));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-align: left;
+}
+
+.specialfood-img-card--row h3 {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+  background: linear-gradient(90deg, var(--primary), var(--secondary));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-align: center;
+}
+
+.subscribe-img-card--row-reverse li,
+.specialfood-img-card--row p {
+  text-align: left;
+}
+
+.subscribe-flex-container,
+.specialfood-flex-container {
+  display: flex;
+}
+
+.subscribe-flex-column,
+.specialfood-flex-column {
+  padding: 40px 40px;
+  flex-direction: column;
+  align-items: center;
+}
+
+hr {
+  border: 1px solid #b0b0b0;
+}
+
+.subscribe-img-card--inner,
+.specialfood-img-card--inner {
+  gap: 2em;
+}
+
+.subscribe-txt-wrapper,
+.specialfood-txt-wrapper {
+  width: 40ch;
+  p {
+    text-align: justify;
+  }
+}
+
+.subscribe-img-card--row-reverse .subscribe-flex-container {
+  flex-direction: row-reverse;
+}
+
+.specialfood-img-wrapper {
+  flex: 10px 0 300px;
+}
+
+.subscribe-img-wrapper {
+  flex: 10px 0 300px;
+}
+
+.specialfood-profile-img {
+  border-radius: 17px;
+}
+
+.subscribe-profile-img {
+  height: 300px;
+  width:  300px;
+  border-radius: 17px;
+}
+
+.subscribe-txt-wrapper {
+  h2 {  
+  color: grey;
+  font-size: 26px;
+  text-align: left;
+  }
+  li {
+  line-height: 2;
+  font-size: 16px;  
+  }
 }
 
 .contact-form {
@@ -369,57 +443,6 @@ textarea::placeholder {
   box-shadow: 0 0 20px rgba(0, 255, 255, 0.3);
 }
 
-.subscription-cards {
-    width: 100%;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 3rem;
-    align-items: start;
-    justify-content: center;
-}
-
-.subscription-card {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  max-width: 350px;
-  margin: auto;
-  text-align: center;
-  h1 {
-  font-family: 'Orbitron', sans-serif;
-  font-size: 2rem;
-  font-weight: 700;
-  margin-bottom: 20px;
-  background: linear-gradient(90deg, var(--primary), var(--secondary));
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  text-align: center;
-  }
-  li {
-    font-size: 16px;
-    text-align: center;
-    padding: 20px;
-  }
-}
-
-.subscription-card-img {
-  width: 100%;
-}
-
-.subscription-price {
-  color: grey;
-  font-size: 22px;
-}
-
-.subscription-card:hover {
-  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-}
-
-.subscribe-contact-icon-container i {
-  font-size: 30px;
-}
-
 .login-card-image {
   width: 25%;
 }
@@ -439,22 +462,56 @@ textarea::placeholder {
 
 
 @media screen and (max-width: 992px) {
-  .specialfoods-container-img {
-    max-width: 100%;
-    margin: auto;
-    padding: 5px;
+  .restaurant-cards,
+  .foodkiosk-cards {
+    grid-template-columns: 1fr;
   }
-  .specialfoods-content p {
+  .restaurant-card h2,
+  .foodkiosk-card h2 {
+    font-size: 1.5rem;
+  }
+  .section-title,
+  .subscribe-txt-wrapper h1 {
+    font-size: 1.8rem;
+  }
+  .restaurant-card-img,
+  .foodkiosk-card-img {
+    p {
+      font-size: 1.5rem;}
+    }
+
+  .restaurant-column,
+  .foodkiosk-column {
+    li {
+    font-size: 12px;}
+  }
+  .specialfood-img-card--row .specialfood-flex-container,
+  .subscribe-img-card--row-reverse .subscribe-flex-container  {
+    flex-direction: column;
+  }
+  .subscribe-img-card h1,  
+  .subscribe-img-card h2,
+  .specialfood-img-card h3 {
     text-align: center;
   }
-  .restaurant-cards,
-  .foodkiosk-cards,
-  .specialfoods-container {
-    grid-template-columns: 1fr;
+  .subscribe-img-card li,
+  .specialfood-img-card p {
+    text-align: justify;
   }
-  .subscription-cards {
-    max-width: auto;
-    grid-template-columns: 1fr;
+  .specialfood-img-card--inner {
+    gap: 2em;
+  }
+  .specialfood-txt-wrapper {
+    width: 300px;
+  }
+  .subscribe-txt-wrapper {
+    width: 300px;
+  }
+  .specialfood-img-wrapper {
+    flex-basis: 300px;
+  }
+  .subscribe-img-wrapper {
+    flex-basis: 300px;
   }
 }
-
+}

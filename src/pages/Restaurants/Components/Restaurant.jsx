@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 const Restaurant = 
 ({name, maininfo, image, location, 
   itemimage1, iteminfo1, itemprice1, 
@@ -31,7 +33,8 @@ const Restaurant =
               </div>
             </div>
           </div>
-            <a href="" className="button">Booking Now</a>
+            <Link to="/restaurant_Booking" className="button"> Booking Now</Link>
+            {/* <a href="" className="button">Booking Now</a> */}
           </div>
   );
 };

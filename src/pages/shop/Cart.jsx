@@ -10,6 +10,8 @@ import Form from "react-bootstrap/Form";
 import InputGroup from "react-bootstrap/InputGroup";
 import Button from "react-bootstrap/Button";
 import React, { useState, useEffect } from "react";
+import Row from "react-bootstrap/Row";
+import Col from "react-bootstrap/Col";
 // Cart Component
 const Cart = () => {
   const cart = useSelector((state) => state.reducer.itemList);
@@ -176,23 +178,47 @@ const Cart = () => {
               <div className="stat-card onlineshop_cart_info">
                 <h2 className="border_bottom">Order Info</h2>
                 <div className="mt-4">
+                   {cart.filter((item) =>
+          item.title.toLowerCase().includes(myfiltervalue.toLowerCase())
+        ).length != 0 ? cart
+                  .filter((item) =>
+                    item.title
+                      .toLowerCase()
+                      .includes(myfiltervalue.toLowerCase())
+                  )
+                  .map((item)=>(
+                    <Row className="order_item">
+                    <Col xs={6} lg={6} style={{textAlign:"left"}}>{item.title}</Col>
+                    <Col xs={3} lg={3}>{item.quantity}x{item.price.toFixed(2)}</Col>
+                    <Col xs={3} lg={3}>${(item.quantity*item.price).toFixed(2)}</Col>
+                    </Row>
+                  )):""}
+                  <div className="order_item">
+                    <Row className="order_item">
+                      <Col xs={6} lg={6} style={{textAlign:"left"}}>Total:</Col>
+                    <Col xs={3} lg={3}> </Col>
+                    <Col xs={3} lg={3}>${total.toFixed(2)}</Col>
+                    </Row>
+                    
+                  </div>
+                    
                   <p className="text-xl font-semibold">
-                    Total: ${total.toFixed(2)}
+                   
                   </p>
                   <Form>
                     <Form.Group
                       className="mb-3"
-                      controlId="exampleForm.ControlInput1"
+                      controlId="testform.ControlInput1"
                     >
                       <Form.Label>Email address</Form.Label>
                       <Form.Control
                         type="email"
-                        placeholder="name@example.com"
+                        placeholder="name@test.com"
                       />
                     </Form.Group>
                     <Form.Group
                       className="mb-3"
-                      controlId="exampleForm.ControlInput1"
+                      controlId="testform.ControlInput1"
                     >
                       <Form.Label>Contact Number</Form.Label>
                       <Form.Control type="email" placeholder="Contact Number" />

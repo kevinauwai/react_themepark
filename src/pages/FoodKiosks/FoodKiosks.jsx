@@ -3,6 +3,7 @@ import FoodKiosk from "./Components/FoodKiosk";
 
 const FoodKiosks = () => {
   return (
+  <div className="tony">
     <div className="foodkiosks" id="foodkiosks">
       <div className="section-title" id="section-title">foodkiosks informations</div>
       <div className="foodkiosk-cards">
@@ -11,6 +12,7 @@ const FoodKiosks = () => {
         ))}
       </div>
     </div>
+  </div>
     );
   };
 

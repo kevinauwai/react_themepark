@@ -11,6 +11,9 @@ const Home = () => {
       {/* <Section title="facilities"/> */}
       <Section title="news"/>
       <Section title="products"/>
+      <Section title="hotel"/>
+      <Section title="tickets"/>
+      <Section title="restaurants"/> 
       {/* <Section title="hotel"/>
       <Section title="Ticket"/>
       <Section title="restaurant"/> */}

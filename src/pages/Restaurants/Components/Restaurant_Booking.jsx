@@ -1,5 +1,6 @@
 const Restaurant_Booking = () => {
    return (
+  <div className="tony">
    <div className="restaurant-booking">
     <div className="section-title" id="section-title">Restaurant Booking</div>
       <div className="restaurant-contact-content">
@@ -41,6 +42,7 @@ const Restaurant_Booking = () => {
             <button type="submit" className="button">SEND MESSAGE</button>
         </form>
     </div>
+   </div>
    </div>
    );
 };

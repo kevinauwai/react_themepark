@@ -3,6 +3,7 @@ import Restaurant from "./Components/Restaurant";
 
 const Restaurants = () => {
   return (
+    <div className="tony">
     <div className="restaurants" id="restaurants">
       <div className="section-title" id="section-title">Restaurant Informations</div>
       <div className="restaurant-cards">
@@ -11,7 +12,8 @@ const Restaurants = () => {
         ))}
       </div>
     </div>
-    );
-  };
+  </div>
+  );
+};
 
 export default Restaurants;

@@ -32,7 +32,7 @@ const Facilities = () => {
           </div>
         </div>
       ))}
-      <img className="facilities-mapimage" src="/image/adventure_map.webp" alt="" style={{ widtht: '50%', alignItems: 'center' }}/>
+      <img className="facilities-mapimage" src="/img/facilities/adventure_map.webp" alt="" style={{ widtht: '50%', alignItems: 'center' }}/>
       <p>
         <Link to="/tickets" className="facilities-tickets-button text-decoration-none">Get Tickets</Link>
       </p>

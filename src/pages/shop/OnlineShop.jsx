@@ -23,10 +23,6 @@ const OnlineShop = () => {
   const handleChange = (value) => {
     setFilter(value);
   };
-   useEffect(() => {
-  // 在组件挂载时将页面滚动到顶部
-      window.scrollTo(0, 0);
-    }, []);
   return (
     <>
       <div className="banner">

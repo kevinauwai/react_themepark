@@ -39,8 +39,12 @@ import Hotel_Rooms_Grand from './pages/hotel_rooms_grand/Hotel_Rooms_Grand';
 import Hotel_Rooms_Premier from './pages/hotel_rooms_premier/Hotel_Rooms_Premier';
 import Hotel_Rooms_Standard from './pages/hotel_rooms_standard/Hotel_Rooms_Standard';
 import Job_Openings from './pages/job_openings/Job_Openings';
-
+import React, {  useEffect } from "react";
 function App() {
+     useEffect(() => {
+    // 在组件挂载时将页面滚动到顶部
+        window.scrollTo(0, 0);
+      }, []);
   return (
     <>
       <BrowserRouter>

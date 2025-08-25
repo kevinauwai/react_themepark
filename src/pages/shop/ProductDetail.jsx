@@ -28,12 +28,7 @@ const ProductDetail = () => {
   let products = useSelector((state) =>
     state.reducer.itemList.filter((item) => item.id === product.id)
   );
-  useEffect(() => {
-    console.log(products);
-    
-// 在组件挂载时将页面滚动到顶部
-    window.scrollTo(0, 0);
-  }, []);
+  
   const dispatch = useDispatch();
 
   const flyitemtocart = async (event, fuc) => {

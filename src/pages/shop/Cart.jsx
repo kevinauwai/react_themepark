@@ -19,10 +19,6 @@ const Cart = () => {
   const dispatch = useDispatch();
   const total = cart.reduce((sum, item) => sum + item.price * item.quantity, 0);
   const [myfiltervalue, setFilter] = useState("");
-     useEffect(() => {
-    // 在组件挂载时将页面滚动到顶部
-        window.scrollTo(0, 0);
-      }, []);
   const handleChange = (filterValue) => {
     setFilter(filterValue);
   };

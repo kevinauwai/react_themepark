@@ -6,10 +6,6 @@ import React, {  useEffect } from "react";
 const NewsDetail = () => {
   const {state}=useLocation();
   const newitem={...state};
-     useEffect(() => {
-    // 在组件挂载时将页面滚动到顶部
-        window.scrollTo(0, 0);
-      }, []);
   return (
     <div className='news_detail_container p-4'>
         <div className='news_detail_item card p-4'>

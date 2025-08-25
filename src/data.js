@@ -4,98 +4,87 @@ export const navlist=[
         text:"home",
         link:"/",
         submenuid:0
-    },
-    // {
-    //     id:2,
-    //     text:"latest news",
-    //     link:"/news",
-    //     submenuid:0
-    // },
+    },   
     {
-        id:3,
-        text:"facilitiese",
-        link:"/facilities",
-        submenuid:0
-    },
-     {
-        id:4,
-        text:"Hotel",
-        link:"/Hotel",
-        submenuid:1
-    },
-    {
-        id:5,
+        id:2,
         text:"tickets",
         link:"/tickets",
         submenuid:0
     },
+     {
+        id:3,
+        text:"Hotel",
+        link:"/Hotel",
+        submenuid:1
+    },
+     {
+        id:4,
+        text:"Facilities",
+        link:"/facilities",
+        submenuid:0
+    },
     {
-        id:6,
-        text:"restaurants",
+        id:5,
+        text:"Dining",
         link:"/restaurants",
         submenuid:2
     },
     {
-        id:7,
-        text:"job openings",
-        link:"/job_openings",
-        submenuid:0
-    },
-    {
-        id:8,
+        id:6,
         text:"shop",
         link:"/onlineshop",
         submenuid:0
-    }
+    },
+    {
+        id:7,
+        text:"Membership",
+        link:"/subscription",
+        submenuid:0
+    },
+    
 ];
 export const navlist_sub=[
     {
         id:1,
-        pid:4,
+        pid:3,
         text:"hotel rooms",
         link:"/hotel_rooms"
     },
     {
         id:2,
-        pid:4,
+        pid:3,
         text:"hotel dining",
         link:"/hotel_dining"
     },
     {
         id:3,
-        pid:4,
+        pid:3,
         text:"hotel facilities",
         link:"/hotel_facilities"
     },
     {
         id:4,
-        pid:4,
+        pid:3,
         text:"hotel booking",
         link:"/hotel_booking"
     },
     {
         id:5,
-        pid:6,
+        pid:5,
         text:"restaurants",
         link:"/restaurants"
     },
     {
         id:6,
-        pid:6,
-        text:"foodKiosks",
+        pid:5,
+        text:"food Kiosks",
         link:"/foodKiosks"
     },
     {
         id:7,
-        pid:6,
-        text:"specialFoods",
+        pid:5,
+        text:"Special Diets",
         link:"/specialFoods"
-    },
-    {
-        id:8,
-        pid:6,
-        text:"subscription",
-        link:"/subscription"
     },
 ];
 export const secitonitems=[

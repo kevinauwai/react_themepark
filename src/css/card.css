@@ -270,6 +270,7 @@ li {
   position: relative;
   overflow: hidden;
   z-index: 2;
+  text-decoration: none;
 }
 
 .button::before {

@@ -157,7 +157,16 @@
     color:white;
 }
 footer{
+    h3,a{
+        text-align: left;
+        line-height: 1.5rem;
+    }
+    .social-icons{
+        display: flex;
+        gap:0.5rem;
+    }
     .navgroup{
+        text-align: left;
         display: flex;
         flex-direction: column;
         h3{
@@ -176,7 +185,7 @@ footer{
         a{
             text-decoration: none;
             color:var(--text-primary);
-            line-height: 1.6;
+            line-height: 2;
              text-transform: capitalize;
             font-weight: 400 !important;
             background:  linear-gradient(0deg,#00ffff,#ff00ff);

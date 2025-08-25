@@ -33,7 +33,10 @@ function Navmenu() {
     >
       <Container>
         <Navbar.Brand href="#">
+          <Link key="home" to="/">
           <img src="../img/home/logo_removebg.png" width={100} />
+          </Link>
+          
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">

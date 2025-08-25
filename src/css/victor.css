@@ -123,6 +123,7 @@ ul {
 
 /* ===================================================================================== */
 .hotel_rooms {
+    padding-top: 2rem;
     width: 80%;
     margin: 0 auto;
     img {
@@ -208,7 +209,7 @@ ul {
 .hotel_rooms_standard, .hotel_rooms_deluxe, .hotel_rooms_premier, .hotel_rooms_grand {
     width: 90%;
     margin: 0 auto;
-
+    padding-top: 2rem;
     article {
         border: 1px solid var(--primary);
         border-radius: 20px;
@@ -356,6 +357,7 @@ ul {
 }
 
 .hotel_dining {
+    padding-top: 2rem;
     width: 80%;
     margin: 0 auto;
     img {
@@ -396,6 +398,7 @@ ul {
 }
 
 .hotel_facilities {
+    padding-top: 2rem;
     width: 80%;
     margin: 0 auto;
     img {
@@ -436,6 +439,7 @@ ul {
 }
 
 .hotel_booking {
+    padding-top: 2rem;
     /* calendar size */
     .react-datepicker {
         transform: scale(1.5);
@@ -584,6 +588,7 @@ ul {
 .job_openings {
     width: 80%;
     margin: 0 auto;
+    padding-top: 2rem;
     
     .job_openings_table_container {
         width: 100%;
@@ -639,7 +644,7 @@ ul {
 .contact_us {
     width: 80%;
     margin: 0 auto;
-
+    padding-top: 2rem;
     h2 {
         text-align: center;
         text-transform: uppercase;
@@ -701,6 +706,7 @@ ul {
 
 @media (min-width: 0px) and (max-width: 991px) {
     .hotel_rooms {
+        padding-top: 2rem;
         width: 90%;
         .hotel_rooms_card_container {
             grid-template-columns: repeat(1, 1fr);

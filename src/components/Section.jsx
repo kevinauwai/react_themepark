@@ -42,7 +42,7 @@ const Section = ({title}) => {
                     {/* <Card.Text>
                     {section.info}
                     </Card.Text> */}
-                     <Link to={section.link} state={{...section}} className='add-btn p-4 neural-btn mt-4 bg-red-500  text-center  py-2 rounded hover:bg-red-600 text-decoration-none  w-100'>Detail</Link>
+                     <Link to={section.link} state={{...section}} className='add-btn p-4 neural-btn mt-4 bg-red-500  text-center  py-2 rounded hover:bg-red-600 text-decoration-none  w-100'>Details</Link>
                     {/* <Button variant="primary" className='neural-btn '>Detail</Button> */}
                 </Card.Body>
             </Card>

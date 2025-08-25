@@ -90,7 +90,7 @@ const Product = (product) => {
           {/* <div style={{color:product.id%2==0?'var(--primary)':'var(--secondary)'}}>${product.price}</div> */}
           <div className="stat-card card-font">
             <div className="stat-number">${product.price}</div>
-            <div className="stat-label">Price</div>
+            {/* <div className="stat-label">Price</div> */}
           </div>
           <div className="productlist_buttons">
             {/* <Button variant='outline-primary' className='btn btn primary'>Add to Cart</Button> */}
@@ -106,7 +106,7 @@ const Product = (product) => {
               state={{ ...product }}
               className="add-btn neural-btn mt-4 bg-red-500  text-center  py-2 rounded hover:bg-red-600 text-decoration-none  w-100"
             >
-              Detail
+              Details
             </Link>
           </div>
         </Card.Body>

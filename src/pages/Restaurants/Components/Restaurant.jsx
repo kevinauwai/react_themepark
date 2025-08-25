@@ -33,7 +33,7 @@ const Restaurant =
               </div>
             </div>
           </div>
-            <Link to="/restaurant_Booking" className="button"> Booking Now</Link>
+            <Link to="/restaurant_Booking" className="button"> Book Now</Link>
             {/* <a href="" className="button">Booking Now</a> */}
           </div>
   );

@@ -35,12 +35,12 @@ export const navlist=[
         link:"/onlineshop",
         submenuid:0
     },
-    {
-        id:7,
-        text:"Membership",
-        link:"/subscription",
-        submenuid:0
-    },
+    // {
+    //     id:7,
+    //     text:"Membership",
+    //     link:"/subscription",
+    //     submenuid:0
+    // },
     
 ];
 export const navlist_sub=[

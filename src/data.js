@@ -245,26 +245,29 @@ export const news=[
         id:1,
         img:'./img/news/news01.webp',
         title:'New Robot Show Launch: "Neon Sentinels Unleashed"',
-        description:`Cyberpunk Hong Kong is thrilled to announce the launch of its latest attraction, "Neon Sentinels Unleashed," a groundbreaking robot show debuting this weekend. Featuring state-of-the-art animatronics inspired by Hong Kong's bustling night markets fused with cyberpunk dystopia, the 30-minute spectacle includes holographic battles between towering mechs and agile drone performers. Guests will witness synchronized light displays, laser effects, and interactive elements where audience members can control minor robot actions via AR apps. The show runs daily at 8 PM in the Central Neon Arena, with tickets included in park admission. Park director Elena Wong stated, "This show embodies the fusion of Hong Kong's vibrant energy and futuristic innovation, pushing the boundaries of entertainment."
-`
+        description:`Cyberpunk Hong Kong is thrilled to announce the launch of its latest attraction, "Neon Sentinels Unleashed," a groundbreaking robot show debuting this weekend. Featuring state-of-the-art animatronics inspired by Hong Kong's bustling night markets fused with cyberpunk dystopia, the 30-minute spectacle includes holographic battles between towering mechs and agile drone performers. Guests will witness synchronized light displays, laser effects, and interactive elements where audience members can control minor robot actions via AR apps. The show runs daily at 8 PM in the Central Neon Arena, with tickets included in park admission. Park director Elena Wong stated, "This show embodies the fusion of Hong Kong's vibrant energy and futuristic innovation, pushing the boundaries of entertainment."`,
+        link:'/newsdetail'
     },
      {
         id:2,
         img:'./img/news/news02.webp',
         title:'New Souvenirs Collaboration: Limited Edition with Street Artist "Glitch Kong"',
-        description:`In an exciting partnership, Cyberpunk Hong Kong has teamed up with renowned Hong Kong street artist "Glitch Kong" for a new line of exclusive souvenirs. The collection includes neon-glowing keychains, holographic postcards depicting iconic cyberpunk skyline views of Victoria Harbour, and customizable LED masks inspired by traditional lion dances reimagined in a high-tech style. Available starting next week at the park's Cyber Bazaar, these items blend local cultural motifs with glitch art aesthetics. "Glitch Kong" shared, "It's about capturing the chaotic beauty of Hong Kong's streets in a cyber world." Prices start at HK$50, with limited stock—perfect for collectors and fans alike.`
+        description:`In an exciting partnership, Cyberpunk Hong Kong has teamed up with renowned Hong Kong street artist "Glitch Kong" for a new line of exclusive souvenirs. The collection includes neon-glowing keychains, holographic postcards depicting iconic cyberpunk skyline views of Victoria Harbour, and customizable LED masks inspired by traditional lion dances reimagined in a high-tech style. Available starting next week at the park's Cyber Bazaar, these items blend local cultural motifs with glitch art aesthetics. "Glitch Kong" shared, "It's about capturing the chaotic beauty of Hong Kong's streets in a cyber world." Prices start at HK$50, with limited stock—perfect for collectors and fans alike.`,
+        link:'/newsdetail'
     },
     {
         id:3,
         img:'./img/news/news03.webp',
         title:'Adverse Weather Arrangement: Enhanced Protocols for Typhoon Season',
-        description:`With typhoon season approaching, Cyberpunk Hong Kong has rolled out updated adverse weather arrangements to ensure guest safety and uninterrupted fun. In the event of Signal 8 or higher, outdoor attractions like the Rooftop Neon Chase will shift to indoor holographic simulations, while the Underground Hacker's Lair expands capacity for sheltered experiences. Real-time weather alerts via the park's app will guide visitors to climate-controlled zones featuring augmented reality storm-themed games. Refunds or rain-check tickets are available for affected days. "Our cyber-enhanced systems monitor conditions in real-time, turning potential disruptions into immersive adventures," said safety officer Kai Leung. Check the park website for live updates.`
+        description:`With typhoon season approaching, Cyberpunk Hong Kong has rolled out updated adverse weather arrangements to ensure guest safety and uninterrupted fun. In the event of Signal 8 or higher, outdoor attractions like the Rooftop Neon Chase will shift to indoor holographic simulations, while the Underground Hacker's Lair expands capacity for sheltered experiences. Real-time weather alerts via the park's app will guide visitors to climate-controlled zones featuring augmented reality storm-themed games. Refunds or rain-check tickets are available for affected days. "Our cyber-enhanced systems monitor conditions in real-time, turning potential disruptions into immersive adventures," said safety officer Kai Leung. Check the park website for live updates.`,
+        link:'/newsdetail'
     },
     {
         id:4,
         img:'./img/news/news04.webp',
         title:'Summer Offers: "Heatwave Hacker Deals" Promotion',
-        description:`Beat the summer heat with Cyberpunk Hong Kong's "Heatwave Hacker Deals," running through September! Enjoy 20% off weekday admissions, buy-one-get-one-free on cyber-fusion street food like neon-lit dim sum and glowing bubble tea, and exclusive access to cooling mist zones with AR water battles. Families can snag bundle packages including fast-pass entry to popular rides like the Vertical Velocity Elevator. "This promotion is designed to make your summer escape as electrifying as our neon lights," noted marketing lead Mia Chen. Book online now to secure spots—limited availability during peak hours.`
+        description:`Beat the summer heat with Cyberpunk Hong Kong's "Heatwave Hacker Deals," running through September! Enjoy 20% off weekday admissions, buy-one-get-one-free on cyber-fusion street food like neon-lit dim sum and glowing bubble tea, and exclusive access to cooling mist zones with AR water battles. Families can snag bundle packages including fast-pass entry to popular rides like the Vertical Velocity Elevator. "This promotion is designed to make your summer escape as electrifying as our neon lights," noted marketing lead Mia Chen. Book online now to secure spots—limited availability during peak hours.`,
+        link:'/newsdetail'
     },
 ];
  export const newsdetails=[

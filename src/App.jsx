@@ -1,6 +1,6 @@
 import "./index.css";
 import "./css/home.css";
-import './CSS/card.css';
+import './css/card.css';
 import './css/victor.css'
 import Navmenu from "./components/Navmenu";
 import "bootstrap/dist/css/bootstrap.min.css";
